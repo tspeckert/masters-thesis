@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Template for Master and Bachelor theses   %
 % at DSV, an adaptation made by Beatrice    %
-% Åkerblom of the                           %
+% Ã…kerblom of the                           %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Template for Doctoral Theses at Stockholm %
 % University. The template is based on      %
@@ -15,7 +15,7 @@
 % Tel. 471 39 70                            %
 %                                           %
 % Special thanks to                         %
-% Anders Källström,                         %
+% Anders KÃ¤llstrÃ¶m,                         %
 % Robert Nyqvist                            %
 % and other studens who have used the       %
 % former version of this template and       %
@@ -43,7 +43,7 @@
                                                    % languages. English
                                                    % default. English
                                                    % hyphenation.
-               \usepackage[latin1]{inputenc} % Unix users should
+               % \usepackage[latin1]{inputenc} % Unix users should
                                              % include this
                                              % package instead of
                                              % ansinew or applemac
@@ -54,9 +54,10 @@
                                                 % should include this package 
                                                 %instead of ansinew or latin1 
                                                 %for correct handling of diacritics.
-              % \usepackage[ansinew]{inputenc}  % Windows users include this package 
-                                                %instead of applemac or latin1 for 
+              %\usepackage[ansinew]{inputenc}  % Windows users include this package 
+                                               %instead of applemac or latin1 for 
                                                 %correct handling of diacritics. 
+              \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
 % Page elements
@@ -106,7 +107,9 @@ pdfpagelabels]{hyperref} % Use this package to obtain links in the
     %\listoffigures
 
     % Include your chapters here.
-    \input{sections/Introduction.tex}
+    \input{sections/introduction.tex}
+    \input{sections/Problem.tex}
+    \input{sections/ResearchQuestions.tex}
 
     \backmatter
     % References
@@ -118,7 +121,7 @@ pdfpagelabels]{hyperref} % Use this package to obtain links in the
     % size as the surrounding text. 
 
     \bibliographystyle{plain}
-    \bibliography{References}
+    \bibliography{biblioDecentralizedEA}
 
     \finalpageDSV
 
