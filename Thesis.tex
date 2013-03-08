@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for Master and Bachelor theses   %
+% at DSV, an adaptation made by Beatrice    %
+% Åkerblom of the                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for Doctoral Theses at Stockholm %
+% University. The template is based on      %
+% the layout an typography used in for      %
+% dissertations in the Acta Univeristatis   %
+% Upsaliensis series                        %
+% Ver 3.0 SU - 2006-09-28                   %
+%                                           %
+% Erik Siira                                %
+% erik.siira@ub.uu.se                       %
+% Tel. 471 39 70                            %
+%                                           %
+% Special thanks to                         %
+% Anders Källström,                         %
+% Robert Nyqvist                            %
+% and other studens who have used the       %
+% former version of this template and       %
+% submitted valuable feedback.              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt,
+               a4,
+%               swedish,     % Uncomment this line if you write in Swedish
+               twoside,
+               openright]{book} % Default font 11pt, all pages are
+                                % printed the same, new chapter always
+                                % begins on a right-hand page.
+
+% \usepackage[frame,a4,center]{crop} % Mount on A4 paper for preview
+%% Use this (by uncommenting) if your printer complains that the paper
+%% size is not A4.  Don't use it when the final version is produced.
+
+
+% Package import
+% Language, diacritics and hyphanation
+               \usepackage[swedish,english]{babel} % Use English
+                                                   % and Swedish
+                                                   % languages. English
+                                                   % default. English
+                                                   % hyphenation.
+               \usepackage[latin1]{inputenc} % Unix users should
+                                             % include this
+                                             % package instead of
+                                             % ansinew or applemac
+                                             % for correct
+                                             % handling of
+                                             % diacritics.
+              % \usepackage[applemac]{inputenc} % Macintosh users
+                                                % should include this package 
+                                                %instead of ansinew or latin1 
+                                                %for correct handling of diacritics.
+              % \usepackage[ansinew]{inputenc}  % Windows users include this package 
+                                                %instead of applemac or latin1 for 
+                                                %correct handling of diacritics. 
+\usepackage[T1]{fontenc}
+
+% Page elements
+\usepackage{mathptmx} % Default font for dissertations is Times.
+%\usepackage{fourier} % If mathematics don't display well using
+                      % Times, then use Fourier.
+\usepackage{helvet}  
+
+\usepackage{ThesisSU} % This package is specific for theses
+                      % written at Stockholm University. 
+                      % Modifications to the classfile and the 
+                      % document can be found here.
+\ifpdf
+   \usepackage[pdftex]{graphicx}
+  \else
+    \usepackage[dvips]{graphicx}
+\fi % Used for figures
+
+\usepackage[colorlinks=true, urlcolor=black, pagecolor=black,
+linkcolor=black, citecolor=black, filecolor=black,
+menucolor=black, pdfpagelayout=TwoColumnRight, pdfstartview=FitH,
+plainpages=false,
+pdfpagelabels]{hyperref} % Use this package to obtain links in the
+                         % electronic version of the document. All
+                         % hyperlinks and other links
+                         % should be black. Page view is set to
+                         % Fit Width and page layout is set to
+                         % display the document spread.  Make page
+                         % anchors using the formatted form of the
+                         % page number.  Set PDF page labels;
+                         % i.e., write the value of \thepage to
+                         % the PDF file so that Acrobat Reader can
+                         % display the page number as (say) 'ii (4
+                         % of 40)' rather than simply '4 of 40'.
+
+% Bibliographic information
+\input{sections/BiblioInfo.tex} % This file should be edited by the author.
+
+\begin{document}
+  
+    \frontmatterDSV % Sets the frontmatter (Title page(s), abstract, keywords, etc.)
+    
+    \tableofcontents
+    
+    % Optional tables
+    %\listoftables
+    %\listoffigures
+
+    % Include your chapters here.
+    \input{sections/Introduction.tex}
+
+    \backmatter
+    % References
+    % No restriction is set to the reference styles
+    % Save your references in References.bib
+
+    % \urlstyle{same}         
+    % Uncomment the line above to make urls have the same font and
+    % size as the surrounding text. 
+
+    \bibliographystyle{plain}
+    \bibliography{References}
+
+    \finalpageDSV
+
+\end{document}
