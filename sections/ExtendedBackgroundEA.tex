@@ -16,6 +16,8 @@ The preliminary phase aims to lay the groundwork for the EA process. Typically, 
 
 [Requirements Management? - maybe 3rd phase]
 
+[Describe a common set of key terms]
+
 % *Definition*
 % 
 % (1) http://www.gartner.com/it-glossary/enterprise-architecture-ea/
@@ -37,7 +39,9 @@ The preliminary phase aims to lay the groundwork for the EA process. Typically, 
 % Op't Land, M.; Proper, E.; Waage, M.; Cloo, J.; Steghuis, C. (2009): Enterprise Architecture: Creating Value by Informed Governance. 1 ed. Springer, Berlin.
 % “a continuous process involving the creation, modification, enforcement, application, and dissemination of different results. This process should be in sync with developments in the environment of the enterprise as well as developments internal to the enterprise, including both its strategy and its operational processes” [18].
 
+
 \subsection{The Open Group Architecture Framework (TOGAF)}
+\subsubsection{Overview}
 The Open Group Architecture Framework, more commonly know as TOGAF, is a freely available EA framework created by The Open Group~\cite{togaf9.1}, a consortium of IT organizations. [SOMETHING ABOUT WHETHER A CONSORTIUM OF IT COMPANIES IS GOOD FOR INNOVATION, PERHAPS MORE FOR STANDARDS --> by corporations, so meant for corporate world]. 
 
 TOGAF is comprised of a number of different aspects, mainly: the Architecture Development Method (ADM), "a method for developing and managing the lifecycle of an enterprise
@@ -52,7 +56,7 @@ architecture"~cite{togaf9.1}; the Architecture Content Framework, the companion 
 
 ADM, Continuum,  \cite{lankhorst2009}
 
-\subsubsection{Preliminary Phase}
+\subsubsection{EA Process}
 TOGAF has a very well defined preliminary phase. TOGAF lays the groundwork for the rest of the EA process in the first two phases of the ADM: the Preliminary phase [CONFUSING, SAME NAME?] and the Architectural Vision phase. In TOGAFs preliminary phase, the primary tasks are to:
 \begin{enumerate}
 % \item Identify affected parts of the enterprise
@@ -80,7 +84,7 @@ Take the above and organize into a Statement of Architecture Work to be approved
 - more about stuff relating to problems
 
 
-\subsubsection{Architecture Definition}
+\subsubsection{EA Definition}
 TOGAF views architecture from the perspective of four different architecture domains~\cite{sessions2007}: business, application, data, and technical. Business architecture is concerned with processes and functions used to meet business goals, application architecture is concerned with the design of specific applications and their interactions, data architecture is concerned with managing enterprise data, and the technical architecture is concerned with the infrastructure (hardware and software) used to support the applications. The architectures in these four domains are created through the ADM phases B (Business Architecture Phase), C (Information Systems Architectures Phase) and D (Technology Architecture).
 
 - Multiple iterations throughout BCD to accomplish the Architecture Development
@@ -111,7 +115,7 @@ The Enterprise Continuum provides a way to organize the architectures from gener
 - Repository (?)
 
 
-engine
+\subsubsection{EA Engine}
 - ADM phases F??, GH
 
 - Multiple iterations focusing on GH for Architecture Governance
@@ -120,15 +124,118 @@ engine
 
 
 \subsection{The Zachman Framework}
-Intro
-- only taxonomy
+\subsubsection{Overview}
+- only taxonomy, fits in to EA definition stage
 - started in 1987 (?), first EA
 - Needs a process, such as TOGAF ADM
 
+\subsubsection{EA Definition}
 architecture definition
 - entirety if ZF
 
-\subsection{Federal Enterprise Architecture (FEA)}
-FEA
+[Insert Zachman Diagram]
+
+breaks down EA into a variety of perspectives
+
+each perspective is characterized by its target audience and the issue is aimed at
+
+\subsection{Federal Enterprise Architecture}
+\subsubsection{Overview}
+The Federal Enterprise Architecture (FEA)is an effort by the federal government of the United States to create an EA for the entire government. The FEA is a complete EA framework, covering all three components of EA. The Federal Enterprise Architecture Program Management Office describes FEA as "...a common language and framework to describe and analyze IT investments, enhance collaboration and ultimately transform the Federal government into a citizen-centered, results-oriented, and market-based organization as set forth in the President's Management Agenda."~\cite{FederalEnterpriseArchitectureProgramManagementOffice} FEA takes takes an approach where their are a set of enterprise-wide architectural standards to be followed but each individual department/agency/OU develops their own individual architecture to fit in [REWORD].
+
+FEA is composed of six core elements~\cite{sessions2007}:
+\begin{itemize}
+    \item The enterprise is broken-down into different segments of varying scopes, and architecture is developed for each segment
+    \item A set of five reference models which are used as a basis to describe the important elements of the FEA in a consistent manner
+    \item A process for creating each segment EA
+    \item A transitional process for moving from the current state of the enterprise to the visioned state
+    \item A taxonomy for organizing the various assets of the FEA
+    \item Guidelines for measuring the degree of success of the FEA
+\end{itemize}
+
+This section will demonstrate how each of these core elements fits into this paper's perspective on EA.
+
+\subsubsection{EA Process}
+
+% Performance Improvement Lifecyle seems to be the overall FEA process
+
+FEA develops architecture for segments and enterprise services. A segment is a "major line-of-business functionality"~\cite{sessions2007} for an individual organizational unit (such as an agency or department). Two types of segments exist, core mission-area segments and business service segments~\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}. Core mission-area segments are at the scope of a single organizational unit (though they may be shared by different units) and are essential to its purpose~\cite{sessions2007,FederalEnterpriseArchitectureProgramManagementOffice2007}. Business service segments are also at the scope of an individual organizational unit, however these segments exist in all organizational units and are defined for the entire enterprise. Like business service segments, enterprise services are defined organization-wide. However, they are different in that they also function at the enterprise level, e.g. a single security management service that is shared by the entire enterprise. 
+
+%"single agency contains both core mission area segments and business service segments. Enterprise services are those cross-cutting services spanning multiple segments."\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}
+%"By contrast, segment architecture defines a simple roadmap for a core mission area, business service or enterprise service"~\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}
+%
+% ~\cite{sessions2007}
+%
+%Segments 
+% - segment is a major line-of-business functionality, e.g. HR
+%     - core mission-area segments, central to mission/purpose of organization
+%     - business-services segment, foundational to all organizations
+% - function at agency level, defined at enterprise level
+
+% Just as enterprises are themselves hierarchically organized, so are the different views provided by each type of architecture.
+ 
+FEA defines a four step iterative process for creating architectures for each segment and service~\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}:
+\begin{enumerate}
+    \item Architectural analysis
+    \item Architectural definition
+    \item Investment and funding strategy
+    \item Program management plan and execute projects
+\end{enumerate}
+
+%New and revised business and information requirements are continuously identified as the segment moves though each lifecycle phase, and as business and information management solutions are funded and developed to meet stakeholder requirements. Consequently, segment architecture work products must be maintained to reflect these inputs.
+
+The first step, architectural analysis, is concerned with defining the scope of the segment, its baseline architecture, current problems in the segment, and a high-level vision of the desired final state for the segment~\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}.
+
+The second step, architectural definition, is concerned with defining the detailed target architecture of the segment~\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}. Aside for the architecture itself, it is also necessary to define a roadmap of projects to get there, the segment transition strategy, and the performance goals of the architecture. 
+  
+The third step, the investment and funding strategy, is concerned with specifying how the projects identified in the segment transition strategy are to be funded~\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}. 
+
+The fourth step, program management plan and execute strategies, is concerned with making detailed plans for the individual projects, executing the plans, and defining performance measurements for the initiative~\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}.
+
+[Insert Figure 3-2: Segment Architecture Development and Maintenance from ~\cite{FederalEnterpriseArchitectureProgramManagementOffice2007}]
+
+% is there an EA agency???
+    
+\subsubsection{EA Definition}
+% ~\cite{sessions2007}
+
+%Segment identification is a continuous, iterative process. Enterprise assets including systems and IT investments are mapped to the agency-level reference models to create a segment-oriented view of the enterprise (see Figure 2-2). 
+%
+%"The FEA consists of a set of interrelated "reference models" designed to facilitate cross-agency analysis and the identification of duplicative investments, gaps, and opportunities for collaboration within and across agencies. Collectively, the reference models [compose] a framework for describing important elements of the FEA in a common and consistent way."~\cite{FederalEnterpriseArchitectureProgramManagementOffice}
+%
+%"This, in a nutshell, is the goal of the five FEA reference models: to give standard terms and definitions for the domains of enterprise architecture and, thereby, facilitate collaboration and sharing across the federal government."
+
+
+In order to have a common language for describing the enterprises assets, FEA describes five reference models for mapping assets to segments and enterprise services~\cite{FederalEnterpriseArchitectureProgramManagementOffice}. The five reference models are the performance reference model, the business reference model, the service component reference model, the technical reference model, and the data reference model. 
+
+[Insert Segment Identification Figure (2.2 on page 20 of ~\cite{FederalEnterpriseArchitectureProgramManagementOffice})]
+
+The performance reference model provides a framework for developing consistent measurement. The business reference model provides a framework for developing a functional view of the enterprises line of business. The service component reference model provides a framework for describing how the services offered by IT systems support business functionality.  The data reference model provides a framework for describing data in a consistent way that enables enterprise-wide sharing. 
+
+
+[More...]
+
+\subsubsection{EA Engine}
+%~\cite{sessions2007}
+
+FEA describes an "engine" to maintain the architecture in order ensure that it stays relevant over time. FEA calls this engine an activity it calls "segment architecture maintenance"~\cite{FederalEnterpriseArchitectureProgramManagementOffice}. In this activity, it is important to monitor for, list and prioritize new architectural change drivers as they appear. The impact of these drivers needs to be defined. 
+
+% term is "architectural change drivers.", maybe define
+
+% Performance Improvement Lifecycle
+
+In addition to the segment architecture maintenance activity, the Office of Management and Budget (OMB) describes an "Enterprise Architecture Assessment Framework" for the continuous assessment of each agencies performance in their EA practice~\cite{OfficeofManagementandBudget}. This framework assesses the maturity of the enterprises adoption of EA in three dimensions of KPIs: completion, use, and results. The "completion" dimension aims to measure the completeness of an agencies target EA and transition plan, i.e. how well it is "positioned to serve  as the agency's blueprint that describes its future state from a performance, business, service, data, and technology standpoint"~\cite{OfficeofManagementandBudget}. The "use" dimension measures how well the architecture is used to "drive decision making"~\cite{sessions2007}. The results dimension measures the direct benefits of using the architecture~\cite{sessions2007}, such as measurable improvements in the performance of programs or the direct benefits to decision makers~\cite{OfficeofManagementandBudget}. 
+
+[Insert Figure 2-1: Information and IT-Enabled Performance Improvement Lifecycle from~\cite{OfficeofManagementandBudget}]
+    
 
 \subsection{A Reference Architecture for Collaborative Networks (ARCON)}
+
+% Move to a related work
+
+
+
+
+
+
+
