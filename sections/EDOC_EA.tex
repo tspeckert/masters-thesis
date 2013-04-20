@@ -1,58 +1,33 @@
-\subsection{Using EA for Decentralized Enterprises}
-The field of Enterprise Architecture (EA) emerged in order to combat two increasingly prevalent problems facing enterprises: system complexity and business-IT alignment~\cite{sessions2007}. As enterprises rely more and more on information systems of increasing complexity, these problems become even more important. The field of EA views the solution to these problems to be one of concurrent design. It is not enough simply try and fit IT to the business; business and IT aspects should be designed concurrently.
-
-%....EA is an enabler of collaboration, which as show earlier is an important concept to decentralized enterprises...however 
-%   
-%As shown in the previous section, collaboration important to decentralized enterprises: need way to collaborate
-    
-\textbf{The Problem: }EA could be that solution, however it has shortcomings for Decentralized Enterprises. But first, we present a taxonomy for EA:
-
 \subsection{A Common Perspective on Enterprise Architecture}
-While there is no singular agreed-upon definition for EA, different definitions\cite{jungle2004,GartnerInc,ross2006,pearlson2009,lankhorst2009,sessions2007,togaf9.1} do have much in common. EA is a discipline that takes a holistic, design-oriented approach to transforming high-level business vision and goals into the integration of an enterprise's organizational structure, business processes, and information systems. This transformation involves identifying and implementing the necessary change for this to occur. In order to view different Enterprise Architectures from a common perspective, this paper will break the frameworks down into three separate components: the EA Method, the EA Description, and the EA Engine. 
+While there is no singular agreed-upon definition for EA, different definitions\cite{jungle2004,GartnerInc,ross2006,pearlson2009,lankhorst2009,sessions2007,togaf9.1} do have much in common. EA is a discipline that takes a holistic, design-oriented approach to transforming high-level business vision and goals into the integration of an enterprise's organizational structure, business processes, and information systems. This transformation involves identifying and implementing the necessary change for this to occur. In order to view different Enterprise Architectures from a common perspective, this paper will break the frameworks down into three separate components: the EA method, the EA description, and the EA engine. 
 
-The EA Method is the process or methodology presented by an EA framework for the purpose of creating and implementing an EA Description. The EA Description component is comprised of the various representations presented by an EA framework for describing an enterprise's architecture. This generally involves outlining an enterprises EA principles, its as-is EA description,  the planned to-be architecture, an analysis of the gap between the as-is and to-be architectures and a plan to cross that gap. The EA Engine component is the support structure for ensuring the ongoing adoption of an implemented EA. This can involve gaining commitment from stakeholders or setting up some compliance checking procedures. The remainder of this section will look at three different EA frameworks from the perspective of of these three phases: The Open Group Architecture Framework (TOGAF), the Zachman Framework, and the Federal Enterprise Architecture (FEA)
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{EA}
+\caption{Enterprise Architecture}
+\label{fig:EA_general}
+\end{figure}
 
-\subsection{The Open Group Architecture Framework (TOGAF)}
+The Method aims to lay the groundwork for the EA project. Typically, this involves setting up teams, ownership, responsibilities and gaining commitment. Also it defines the overall process of collecting, validating and approving the EA artifacts  (eg. descriptions As-Is, To-Be, gap analysis,  principles) that will form the second component - The EA description.  The Engine involves setting up a support structure for ensuring the ongoing adoption of the to-be EA description. This can involve gaining commitment from stakeholders, setting up some compliance checking procedures, and deciding upon a prioritization of tasks to be completed. The remainder of this section will look at three different EA frameworks from the perspective of of these three phases: The Open Group Architecture Framework (TOGAF), the Zachman Framework, and the Federal Enterprise Architecture (FEA)
 
-\subsubsection{Overview}
+\subsection{TOGAF}
 The Open Group Architecture Framework, more commonly know as TOGAF, is a freely available EA framework created by The Open Group~\cite{togaf9.1}, a consortium of IT organizations. TOGAF is comprised of a number of different aspects, mainly: the Architecture Development Method (ADM), "a method for developing and managing the lifecycle of an enterprise architecture"~cite{togaf9.1}; the Architecture Content Framework, a companion to the ADM which describes the content of the products of the ADM; and the Enterprise Continuum, which provides a means to organize the produced architectures. 
-
-%[SOMETHING ABOUT FLEXIBILITY AND ITERATION]
-% p 190
-%3 levels of iteration:
-%- multiple ADMs to create different architectures
-%- within ADM
-%- change
-%
-%ADM, Continuum,  \cite{lankhorst2009}
-
 \subsubsection{EA Method}
 The TOGAF ADM falls under our EA Method component of EA. The TOGAF ADM is made up of a preliminary phase, six core phases (labeled A-H), and a requirements management component. 
 
 [XXXX TOGAF ADM Diagram XXXX]
 
-In TOGAF, the preliminary phase lays the groundwork for the rest of the EA process. Important steps take in this phase are: to have stakeholders agree on the expected effects of the TOGAF process; to set up a governance structure and EA team for the EA process; set initial, overarching principles for the EA process; tailor TOGAF to the enterprise; and establish a repository for storing all architectural information.~\cite{togaf9.1}
+In TOGAF, the preliminary phase lays the groundwork for the rest of the EA process. Some important aspects are to set up a governance structure and EA team for the EA process and to establish a repository for storing all architectural information.~\cite{togaf9.1}
 
-Phase A of the TOGAF Process, the architectural vision phase, is aimed at setting a clear vision for the enterprises future architecture. This involves creating the initial as-is architecture as well as setting clear, management approved goals and requirements, and transforming them into a high-level vision of the enterprises to-be architecture~\cite{togaf9.1}. Based on this vision, a schedule and plan for its realization needs to be created along with acceptance criteria. 
+Phase A of the TOGAF Process, the architectural vision phase, is aimed at setting a clear vision for the enterprises future architecture. This involves creating the initial as-is architecture as well as setting clear, management approved goals and requirements, and transforming them into a high-level vision of the enterprises to-be architecture~\cite{togaf9.1}.
 
 At this point, TOGAF suggests that the outputs of the preliminary phase and phase A be organized into a "Statement of Architecture Work". This document is to be approved by project sponsors and can be used to form the basis of a contract between the architecture provider and the client~\cite{togaf9.1}.
 
-The next three phases, B-D are concerned with creating the as-is and to-be business architecture, information systems architecture, and the technology architecture. TOGAF suggests two different approaches to creating the architectures: baseline or target-first~\cite{togaf9.1}. Baseline-first involves analyzing the as-is architecture for areas where improvements can be made. Target-first aims at creating a detailed target architecture and then mapping it back to the as-is architecture in order figure out what needs to change. 
+The next three phases, B-D are concerned with creating the as-is and to-be business architecture, information systems architecture, and the technology architecture. TOGAF suggests two different approaches to creating the architectures: baseline or target-first~\cite{togaf9.1}. Baseline-first involves analyzing the as-is architecture for areas where improvements can be made. Target-first aims at creating a detailed target architecture and then mapping it back to the as-is architecture in order figure out what needs to change. The main aspects of these phases are to develop the as-is and to-be architectures, analyze the gap between them, and create an initial road-map of the steps needed to cross the gap.
 
-Phases B-D each have the same generic steps, although the specifics of each step are different for each phase. These nine steps are~\cite{togaf9.1}:
-\begin{enumerate}
-    \item Pick reference models, tools, and viewpoints to be used in the development of the relevant architecture
-    \item Develop the as-is architecture
-    \item Develop the to-be architecture
-    \item Analyze the gap between the as-is and to-be architectures
-    \item Create an initial road-map of the steps needed to cross the gap
-    \item Compare the target architecture with the initial "Statement of Architecture Work" in conjunction with stakeholders to verify it satisfies the statement's requirements
-    \item Finalize the architecture definition
-\end{enumerate}
+Phase E and F, Opportunities and Solutions and Migration Planning, are concerned with organizing the work to be done into projects, and then creating a schedule for executing the projects. 
 
-Phase E and F, Opportunities and Solutions and Migration Planning, are concerned with formalizing the plans for implementing the to-be architecture~\cite{togaf9.1}. First, an ordered set of work packages for realizing the target architectures needs to be created. Each work package is a group of changes that need to be made. Second, the transition architectures need to be outlined (if they exist). A transition architecture describes the enterprise at state between the initial as-is and the target to-be architectures. Third, a detailed project plan that schedules the work packages into projects called the Implementation and Migration Plan is developed. 
-
-ADM phase G is concerned with the implementation and setting up a framework for its governance and its compliance to the target architecture~\cite{togaf9.1}. [don't know where to put this phase]
+The final ADM phase, phase G, is concerned with the implementation and setting up a framework for its governance and its compliance to the target architecture~\cite{togaf9.1}.
 
 \subsubsection{EA Description}
 TOGAF views architecture from the perspective of four different architecture domains~\cite{sessions2007}: business, application, data, and technical. Business architecture is concerned with processes and functions used to meet business goals, application architecture is concerned with the design of specific applications and their interactions, data architecture is concerned with managing enterprise data, and the technical architecture is concerned with the infrastructure (hardware and software) used to support the applications. The architectures in these four domains are created through the ADM phases B (Business Architecture Phase), C (Information Systems Architectures Phase) and D (Technology Architecture).
@@ -71,7 +46,7 @@ At each level of the Architecture Landscape, architectures are further organized
 % architecture landscape
 % architecture partitioning
 % architecture capability
-% interop of partitions "federated architectures — independently developed, maintained, and managed architectures that are subsequently integrated within an integration framework — are typical
+% interop of partitions "federated architectures � independently developed, maintained, and managed architectures that are subsequently integrated within an integration framework � are typical
 
 
 
@@ -85,31 +60,31 @@ TOGAF describes a formal review process for determining compliance. The main goa
 
 %Some other goals of this process are to "Ensure the application of best practices to architecture work" "Provide an overview of the compliance of an architecture to mandated enterpr ise standards." "Identify where the standards themselves may require modification." "Communicate to management the status of technical readiness of the project." "Identify and communicate significant architectural gaps to product and service providers"
 
-% architecture governance
+TOGAF outlines a formal approach to architecture governance which involves the setting up of an "Architecture Board"~\cite{togaf9.1}. "to oversee the implementation of the [architecture] strategy"~\cite{togaf9.1}. This board has an important role in Architecture Governance, such as "[p]roviding the basis for all decision-making with regard to the architectures"~\cite{togaf9.1} and enforcing architecture compliance. The TOGAF Architecture Governance Framework suggests guidelines for developing a formal governance structure for the Enterprise Continuum (and thus, all the architectural artifacts) and architecture processes. 
+
+
+%governance p 590
 
 %[Repository]
 %
 %[requirements management]
 
-
-\subsection{The Zachman Framework}
-\subsubsection{Overview}
+\subsection{Zachman}
 The Zachman Framework was the first EA, first introduced by John Zachman in 1987~\cite{sessions2007,zachman}. It consists only of a taxonomy, and as such only fits into the EA Description aspect of EA. 
 
-- only taxonomy, fits in to EA definition stage
-- started in 1987 (?), first EA
-- Needs a process, such as TOGAF ADM
+\subsubsection{EA Description}
 
-\subsubsection{EA Definition}
 
-[Insert Zachman Diagram]
 
-The Zachman Framework breaks down EA into a grid of perspectives. Each perspective is characterized by two things; its target audience and the issue is aimed at. ZF covers six issues: What (data), How (function), Where (networks and connections), Who (people), When (time), Why (motivation). For each issue, it views it from five different perspectives: contextual, conceptual, logical, physical, and detailed. 
+The Zachman Framework breaks down EA into a grid of perspectives. Each perspective is characterized by two things; its target audience and the issue is aimed at. ZF covers six issues: What (data and entities), How (functional), Where (locations and interconnections/networks), Who (people relationships), When (events and performance criteria), Why (motivations and goals)~\cite{jungle2004}. For each issue, it views it from five different perspectives: contextual, conceptual, logical, physical, and detailed. 
+
+The contextual perspective is meant for executives or planners and needs to provide an estimate of a system's functionality and cost~\cite{jungle2004}. The conceptual perspective is a business view of how an owner thinks the business operates~\cite{Zachman2000}. The logical perspective takes a systems viewpoint and describes the operations and interactions of the variety of systems in an enterprise. The physical perspective views describes the physical technology and design of the individual systems. The detailed perspective takes the perspective of a "sub-contractor" who is implementing a specific system and the high, out-of-context level of detail associated with that.
+ 
+[XXXX Zachman Diagram XXXX]
 
 [expand on each perspective, table?]
 
-\subsection{Federal Enterprise Architecture}
-\subsubsection{Overview}
+\subsection{FEA}
 The Federal Enterprise Architecture (FEA)is an effort by the federal government of the United States to create an EA for the entire government. The FEA is a complete EA framework, covering all three components of EA. The Federal Enterprise Architecture Program Management Office describes FEA as "...a common language and framework to describe and analyze IT investments, enhance collaboration and ultimately transform the Federal government into a citizen-centered, results-oriented, and market-based organization as set forth in the President's Management Agenda."~\cite{FederalEnterpriseArchitectureProgramManagementOffice} FEA takes takes an approach where individual organizational units develop their own architectures that fit into an overall framework of common standards and interoperability.
 
 FEA is composed of six core elements~\cite{sessions2007}:
@@ -121,8 +96,6 @@ FEA is composed of six core elements~\cite{sessions2007}:
     \item A taxonomy for organizing the various assets of the FEA
     \item Guidelines for measuring the degree of success of the FEA
 \end{itemize}
-
-This section will demonstrate how each of these core elements fits into this paper's perspective on EA.
 
 \subsubsection{EA Method}
 
@@ -181,9 +154,6 @@ In order to have a common language for describing the enterprises assets, FEA de
 
 The performance reference model provides a framework for developing consistent measurement. The business reference model provides a framework for developing a functional view of the enterprises line of business. The service component reference model provides a framework for describing how the services offered by IT systems support business functionality.  The data reference model provides a framework for describing data in a consistent way that enables enterprise-wide sharing. 
 
-
-[More...]
-
 \subsubsection{EA Engine}
 %~\cite{sessions2007}
 
@@ -196,7 +166,4 @@ FEA describes an "engine" to maintain the architecture in order ensure that it s
 In addition to the segment architecture maintenance activity, the Office of Management and Budget (OMB) describes an "Enterprise Architecture Assessment Framework" for the continuous assessment of each agencies performance in their EA practice~\cite{OfficeofManagementandBudget}. This framework assesses the maturity of the enterprises adoption of EA in three dimensions of KPIs: completion, use, and results. The "completion" dimension aims to measure the completeness of an agencies target EA and transition plan, i.e. how well it is "positioned to serve  as the agency's blueprint that describes its future state from a performance, business, service, data, and technology standpoint"~\cite{OfficeofManagementandBudget}. The "use" dimension measures how well the architecture is used to "drive decision making"~\cite{sessions2007}. The results dimension measures the direct benefits of using the architecture~\cite{sessions2007}, such as measurable improvements in the performance of programs or the direct benefits to decision makers~\cite{OfficeofManagementandBudget}. 
 
 [Insert Figure 2-1: Information and IT-Enabled Performance Improvement Lifecycle from~\cite{OfficeofManagementandBudget}]
-
-
-    
 
