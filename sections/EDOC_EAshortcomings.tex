@@ -16,28 +16,49 @@ The field of Enterprise Architecture (EA) emerged in order to combat two increas
 
 \subsubsection{Concepts supporting a centralized organization}
 
-%TOGAF outlines a formal approach to architecture governance which involves the setting up of an "Architecture Board"~\cite{togaf9.1}. "to oversee the implementation of the [architecture] strategy"~\cite{togaf9.1}. This board has an important role in Architecture Governance, such as "[p]roviding the basis for all decision-making with regard to the architectures"~\cite{togaf9.1} and enforcing architecture compliance. The TOGAF Architecture Governance Framework suggests guidelines for developing a formal governance structure for the Enterprise Continuum (and thus, all the architectural artifacts) and architecture processes.
+\paragraph*{EA Method and EA Engine}
+TOGAF outlines a formal approach to architecture governance which involves the setting up of an "Architecture Board"~\cite{togaf9.1}. "to oversee the implementation of the [architecture] strategy"~\cite{togaf9.1}. This board has an important role in Architecture Governance, such as "[p]roviding the basis for all decision-making with regard to the architectures"~\cite{togaf9.1} and enforcing architecture compliance. 
+%The TOGAF Architecture Governance Framework suggests guidelines for developing a formal governance structure for the Enterprise Continuum (and thus, all the architectural artifacts) and architecture processes. 
 
-The Architecture Board suggested by TOGAF is a centralized concept. Having a single entity responsible for high-level decision making fits in with the concept of a centralized organization discussed in section [LINK]. TOGAF does suggest that the board has enterprise-wide representation~\cite{togaf9.1} which may support some level of decentralization, however it suggests the representation comes in the form of "senior managers"; a concept primarily from traditional organization structures. 
+Architecture board concept suits well for the organization with strong centralization in IT (Centralized IT to Federal IT in Fig. \ref{fig:taxonomy}.  Having a single entity responsible for high-level decision making fits in with the concept of a Centralized IT organization. TOGAF does suggest that the board has enterprise-wide representation~\cite{togaf9.1} which may support some level of decentralization, however it suggests the representation comes in the form of "senior managers"; a concept primarily from traditional organization structures. 
 
-Throughout TOGAF, references are made to the existence of a bureaucratic or hierarchical centralized structure in place. For example, an important part of the preliminary phase is to set up a formal governance framework for all architectural material, a concept that is related to the rigid forms of traditional organizational structure. A second example of this is after the completion of "Phase A: Architecture Vision", TOGAF requires approval of the current vision of the architecture. This requirement of approval assumes the existence of someone with a higher level of decision-making authority to give approval. A third example is an entire set of architectures at the strategic level of the Architecture Landscape which is meant for the "executive level"~\cite{togaf9.1}.
+Throughout TOGAF, references are made to the existence of a bureaucratic or hierarchical centralized structure in place: 
 
-TOGAF suggests the development of architecture principles that "...define the underlying general rules and guidelines for the use and
-deployment of all IT resources and assets across the enterprise"~\cite{togaf9.1}. Furthermore, TOGAF suggests principles can be organized into a hierarchy of principles. Having a central set of principles that is to be applied to an entire organization supports centralization.
+For example, an important part of the preliminary phase [REF] is to set up a \textit{formal governance framework} for all architectural material, a concept that is related to the rigid forms of traditional organizational structure. 
+
+Another example: after the completion of "Phase A: Architecture Vision", TOGAF requires approval of the current vision of the architecture. This requirement of approval assumes the existence of someone with a higher level of decision-making authority to give approval. 
+
+A third example is an entire set of architectures at the strategic level of the Architecture Landscape which is meant for the "executive level"~\cite{togaf9.1}.
+
+\paragraph*{EA Description}
+TOGAF suggests the development of architecture principles that "...define the underlying general rules and guidelines for the use and deployment of all IT resources and assets across the enterprise"~\cite{togaf9.1}. Furthermore, TOGAF suggests principles can be organized into a hierarchy. Having a central set of principles that is to be applied to an entire organization supports centralization.
 
 TOGAF includes the concept of an Architecture Repository, which is to hold the entirety of the Architecture Landscape in addition to other architecture-related information. The idea of a single place to store all information is highly supportive of centralization. 
 
 \subsubsection{Concepts supporting decentralization}
+\paragraph*{EA Method and EA Engine}
+TOGAF primarily supports some level of decentralization through the concept of \textit{partitions}. It suggests dividing the Architecture Landscape into separate parts in order to support multiple architecture teams working concurrently and conflicting architectures in different organizational units. This enables "federated architectures — independently developed, maintained, and managed architectures that are subsequently integrated within an integration framework — are typical. 
 
-TOGAF primarily supports some level of decentralization through the concept of partitions. It suggests dividing the Architecture Landscape into separate partitions in order to support multiple architecture teams working concurrently and conflicting architectures in different organizational units. This enables "federated architectures — independently developed, maintained, and managed architectures that are subsequently integrated within an integration framework — are typical. Federated architectures typically are used in governments and conglomerates, where the separate organizational units need separate architectures"~\cite{togaf9.1}. This supports the idea of different organizational units developing their own individual architectures, at least on the level of a federated organizational structure. 
+Federated architectures typically are used in governments and conglomerates, where the separate organizational units need separate architectures"~\cite{togaf9.1}. This supports the idea of different organizational units developing their own individual architectures. The mechanism for integrating the individual architectures under the roof of the corporate architecture is not explicit. 
+%, at least on the level of a federated organizational structure. 
 
 %"modular architecture segments that can be taken and incorporated into broader architectures and solutions"~\cite{togaf9.1} 
 
-TOGAF additionally indirectly supports decentralization through the suggestion that the entire TOGAF process be tailored to fit the needs of the enterprise. This is done in the preliminary phase of the ADM. In theory, this would allow TOGAF to support any kind of enterprise. The guidelines provided for this, however, are minimal. 
+TOGAF additionally indirectly supports decentralization through the suggestion that the entire TOGAF process be\textit{ tailored to fit the needs of the enterprise}. This is done in the preliminary phase of the ADM. In theory, this would allow TOGAF to support any kind of enterprise. The guidelines provided for this, however, are minimal. 
 
 \subsection{Zachman}
 %Limited perspectives?
-The Zachman Framework aims to model a complete enterprise in a single, "periodic table of elements"~\cite{Bente2012}. It attempts to break down an enterprise into exactly 30 different views. This lack of flexibility is perhaps the Zachman Frameworks main shortcoming with respect to decentralization: a primary aspect of decentralized organizations is their high level of flexibility. Furthermore, the perspectives of Zachman Framework line up with a bureaucratic organizational structure (e.g. executive and business management perspectives). For a traditional, centralized organization these perspectives make a lot of sense. For a decentralized organization where these roles are not as defined, however, it is not clear how to use the Zachman Framework. 
+\subsubsection{Concepts supporting centralization}
+
+The Zachman Framework aims to model a complete enterprise in a single, "periodic table of elements"~\cite{Bente2012}. It attempts to break down an enterprise into six distinct domains (inventory sets, process flows, distribution networks, responsibility assignments, timing cycles, motivation intentions). These domains are seen from the six different perspectives that correspond to different roles in organization (executive, business management, system architect, engineer, technician, end user).  [FROM ZACHMAN FRAMEWORK v.3]
+
+Overall framework represents a matrix of 36 elements, with alignment and composite integration relations defined between these elements.
+
+The perspectives of Zachman Framework line up with a bureaucratic organizational structure: the defined views (from executive to user) constitute an explicit organizational hierarchy. Clear separation between 
+%(e.g. executive and business management perspectives).
+
+
+This lack of flexibility is perhaps the Zachman Frameworks main shortcoming with respect to decentralization: a primary aspect of decentralized organizations is their high level of flexibility. Furthermore, the perspectives of Zachman Framework line up with a bureaucratic organizational structure (e.g. executive and business management perspectives). For a traditional, centralized organization these perspectives make a lot of sense. For a decentralized organization where these roles are not as defined, however, it is not clear how to use the Zachman Framework. 
 
 \subsection{FEA}
 
