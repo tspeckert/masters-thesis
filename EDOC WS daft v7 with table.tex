@@ -127,22 +127,30 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
+  \usepackage[pdftex]{graphicx}
+  \usepackage{epstopdf}
   % declare the path(s) where your graphic files are
   % \graphicspath{{../pdf/}{../jpeg/}}
+  \graphicspath{{Figures/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
   % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+  \DeclareGraphicsExtensions{.eps}
 \else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
   % driver is specified.
+    \usepackage{graphicx}
+  % declare the path(s) where your graphic files are
+  \graphicspath{{Figures/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+   \DeclareGraphicsExtensions{.eps}
   % \usepackage[dvips]{graphicx}
   % declare the path(s) where your graphic files are
   % \graphicspath{{../eps/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
 \fi
 % graphicx was written by David Carlisle and Sebastian Rahtz. It is
 % required if you want graphics, photos, etc. graphicx.sty is already
@@ -325,7 +333,7 @@
 
 % *** PDF, URL AND HYPERLINK PACKAGES ***
 %
-%\usepackage{url}
+\usepackage{url}
 % url.sty was written by Donald Arseneau. It provides better support for
 % handling and breaking URLs. url.sty is already installed on most LaTeX
 % systems. The latest version can be obtained at:
@@ -358,9 +366,9 @@
 % use a multiple column layout for up to three different
 % affiliations
 \author{\IEEEauthorblockN{Thomas Speckert}
-\IEEEauthorblockA{DSV - SU\\
-Stockholm, Sweden\\
-Email: xxxxx}
+\IEEEauthorblockA{DSV\\
+Stockholm University \\ Borgarfjordsg. 15, Kista, Sweden\\
+Email: thsp7525@student.su.se}
 \and
 \IEEEauthorblockN{Irina Rychkova}
 \IEEEauthorblockA{CRI\\
@@ -368,9 +376,9 @@ Universit\'{e} Paris 1 Panth\'{e}on - Sorbonne,\\ 90 rue Tolbiac, 75013 Paris, F
 Email: irina.rychkova@univ-paris1.fr}
 \and
 \IEEEauthorblockN{Jelena Zdravkovic}
-\IEEEauthorblockA{DSV - SU\\
-Stockholm, Sweden\\
-Email: xxxxx}
+\IEEEauthorblockA{DSV\\
+Stockholm University \\ Borgarfjordsg. 15, Kista, Sweden\\
+Email: jelenaz@dsv.su.se}
  }
 
 
@@ -412,16 +420,10 @@ Email: xxxxx}
 
 \begin{abstract}
 %\boldmath
-tbd.
+The problem of business-IT alignment is of vital significance for modern enterprises. Solving it allows all components of an enterprise to operate together in a collaborative manner for the purpose of maximizing overall benefit to the enterprise. Enterprise Architecture (EA) is a discipline that aims to surmount mismatches of business and IT in a holistic manner from the ground up through proper design. 
+
+Decentralization of organizations and subsequent change of their management and operation style requires major changes in organization processes and heavily involves the IT. This paper demonstrates, however, that EA is primarily aimed at centralized organizational structures, and as such has shortcomings when being applied to decentralized organizations. Overcoming these deficiencies requires some new principles to be introduced and incorporated into EA knowledge. Relevant sources for these new principles are decentralized organizations, peer-to-peer technologies, and organizational science. All these areas have tackled the problem of decentralization in certain ways.  This paper presents prevalent decentralization principles, and how they have the potential to be applied to EA.
 \end{abstract}
-
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the conference you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals/conferences frown on
-% math in the abstract anyway.
-
 % no keywords
 \begin{IEEEkeywords}
 Enterprise Architecture, Decentralization, Peer-to-Peer
@@ -441,10 +443,34 @@ Enterprise Architecture, Decentralization, Peer-to-Peer
 
 \section{Introduction}
 \label{intro}
-%
  \input{Sections/introduction}
+%
+\section{Enterprise Architecture and EA Modeling Frameworks}
+\label{EA}
+\input{Sections/EDOC_EA}
+
+\section{Organizational Structure and Decentralization}
+\label{organizations}
+\input{Sections/EDOC_organizationTaxonomy}
+
+%\section{Enterprise Architecture for Decentralized Organizations}
+
+%OR : 
+
+\section{Existing EA Practices to Support Decentralization: Analysis and Shortcomings}
+\label{existing}
+%\input{Sections/EDOC_decentralizedChallenges}
+
+\label{shortcomings}
+\input{Sections/EDOC_EAshortcomings}
+
+\section{Towards Definition of  Decentralized EA}    
+\label{principles}
+\input{Sections/EDOC_principles}
+
  \section{Conclusion}
 \label{conclusion}
+\input{Sections/EDOC_Conclusion}
 
 %
 

@@ -71,17 +71,25 @@
                       % written at Stockholm University. 
                       % Modifications to the classfile and the 
                       % document can be found here.
-\ifpdf
-   \usepackage[pdftex]{graphicx}
-  \else
-    \usepackage[dvips]{graphicx}
-\fi % Used for figures
+%\ifpdf
+%   \usepackage[pdftex]{graphicx}
+%  \else
+%    \usepackage[dvips]{graphicx}
+%\fi % Used for figures
 
-\usepackage[colorlinks=true, urlcolor=black, pagecolor=black,
-linkcolor=black, citecolor=black, filecolor=black,
-menucolor=black, pdfpagelayout=TwoColumnRight, pdfstartview=FitH,
-plainpages=false,
-pdfpagelabels]{hyperref} % Use this package to obtain links in the
+% need to use dvipdfm (current build order latex->bibtex->latex->latex->dvipdfm)
+\usepackage{graphicx}
+\graphicspath{{Figures/}}
+\DeclareGraphicsExtensions{.eps}
+
+% trying instead of below
+ \usepackage{url}
+
+%\usepackage[backref, colorlinks=true, urlcolor=black, pagecolor=black,
+%linkcolor=black, citecolor=black, filecolor=black,
+%menucolor=black, pdfpagelayout=TwoColumnRight, pdfstartview=FitH,
+%plainpages=false,
+%pdfpagelabels]{hyperref} % Use this package to obtain links in the
                          % electronic version of the document. All
                          % hyperlinks and other links
                          % should be black. Page view is set to
@@ -157,9 +165,22 @@ pdfpagelabels]{hyperref} % Use this package to obtain links in the
     % Uncomment the line above to make urls have the same font and
     % size as the surrounding text. 
 
-    \bibliographystyle{plain}
+%    from paper    
+%    \renewcommand{\baselinestretch}{0.98}
+%    \bibliographystyle{IEEEtran}
+%    {\small
+%    \bibliography{biblioDecentralizedEA}
+%    }
+%    \renewcommand{\baselinestretch}{1}
+
+%    from SU
+%    \bibliographystyle{plain}
+%    \bibliography{biblioDecentralizedEA}
+
+
+    \bibliographystyle{IEEEtran}
     \bibliography{biblioDecentralizedEA}
 
-    \finalpageDSV
+%    \finalpageDSV
 
 \end{document}
