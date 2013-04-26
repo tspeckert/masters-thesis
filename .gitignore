@@ -11,6 +11,9 @@
 *.out
 *.bak
 *.tks
+*.ps
+archive/
 
 #exceptions
 !Thesis Part1 Draft1.pdf
+!Decentralized EA - EDOC TEAR.pdf
