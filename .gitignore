@@ -12,6 +12,9 @@
 *.bak
 *.tks
 *.ps
+*.vsd
+*.~vsd
+*.emf
 archive/
 
 #exceptions

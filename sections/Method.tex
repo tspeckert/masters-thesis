@@ -67,7 +67,7 @@ Research strategies do not prescribe any concrete ways to generate and analyze d
 
 %%data generation
 
-This thesis employs the use of interviews and document studies for data generation.  Document studies are used as a large amount of data on the structure of the organization being studied is available. Documents are a good source of authoritative, objective, and factual data~\cite{denscombe2010good}, which therefore gives a solid foundation on understanding the studied organization. Interviews were chosen in order to supplement this data with information from stakeholders about the organization. Interviews are suited for gaining insight into complex phenomena, which is supportive of our need for an in-depth view of a complex entity that is an organization. Furthermore, interviews are practical for this project as; a) the organization being studied does not need to invest large amounts of time and b) I have physical access to potential interviewees. 
+This thesis employs the use of interviews and document studies for data generation.  Document studies are used as a large amount of data on the structure of the organization being studied is available. Documents are a good source of authoritative, objective, and factual data~\cite{denscombe2010good}, which therefore gives a solid foundation on understanding the studied organization. Interviews were chosen in order to supplement this data with x`information from stakeholders about the organization. Interviews are suited for gaining insight into complex phenomena, which is supportive of our need for an in-depth view of a complex entity that is an organization. Furthermore, interviews are practical for this project as; a) the organization being studied does not need to invest large amounts of time and b) I have physical access to potential interviewees. 
 
 Other common data generation methods are questionnaires and observations. Questionnaires are not particularly suitable for this project as they are most useful when used for specific, straightforward information~\cite{denscombe2010good}. This project, on the other hand, is interested in the complexities of an organization. An observation study would require spending time in an organization in order to directly observe its operations. As this thesis is conducted as an individual project, this is not a feasible activity, due to the size and complexity of an organization.
 
@@ -77,27 +77,121 @@ After the data has been obtained, it is necessary to analyze it in order to unde
 
 \section{Application of Method}
 
-This thesis work follows the framework by Johannesson and Perjons~\cite{johannessonPerjons2012} presented above in Section \ref{sec:framework}. 
+This thesis work follows the framework by Johannesson and Perjons~\cite{johannessonPerjons2012} presented above in Section \ref{sec:framework}. The only change to their proposed framework is that the formal ``evaluate artifact'' activity will not be performed. This section will first elaborate on how the different activities will be accomplished and then outline the overall process. 
 
-\subsection{Explicate Problem}
+As suggested by Johannesson and Perjons~\cite[Ch. 4]{johannessonPerjons2012}, the IDEF0 notation will be used for visualizing the various activities. In this notation, each activity as an input and output, controls in the form of research strategies and methods, and resources which is the knowledge base for the activity. 
 
-formulate precisely the initial problem
-motivate its importance
-investigate its underlying causes
+\subsection{Case Study: An Institution of Higher Education in Sweden}
+\label{sec:case}
 
-\subsection{Outline Artifact and Define Requirements}
-
+This thesis work will use an institution of higher education in Sweden as an illustrative case study. 
 
 
-\subsection{Design and Develop Artifact}
+why chosen....
 
 
-
-\subsection{Demonstrate Artifact}
-
+good and bad....
 
 
-\subsection{Evaluate Artifact}
+....
+
+\subsection{Research Activities}
+\paragraph*{Explicate problem}
+
+Figure \ref{fig:method_problem} outlines the major components of this activity:
+
+\begin{description}
+  \item[Sub-activities] \hfill \\ These are ``define precisely'', ``motivate problem'' and ``find root causes''~\cite[Ch. 5]{johannessonPerjons2012}.
+  \item[Input] \hfill \\ The initial problem as described in Section \ref{sec:problem}.
+  \item[Resources] A literature review of the modern EA frameworks TOGAF, Zachman Framework, and FEA. These three frameworks were chosen due to their popularity and extensive available literature.
+  \item[Controls] \hfill \\ A case study research strategy that will make use of interviews and a document study. The case is detailed in Section \ref{sec:case}. 
+  \item[Output] \hfill \\ A fully explicated problem, specifically, the set of specific shortcomings of modern EA frameworks when applied to decentralized organizations determined in the ``find root causes'' sub-activity.
+\end{description}
+
+The first sub-activity, define precisely, will be accomplished with the use of the literature review. Here, the differences between centralized and decentralized  organizations will be precisely specified in order to show that there is a problem. 
+
+In the second sub-activity, the problem will then be motivated through the use of the case study. To this end, the case will first be shown to be a decentralized organization. For this, a classification for decentralized organizations will be built from the literature review and the case institution will classified with it. Any problems arising from the case institution's implicit EA and their organizational structure can then be used to motivate the problem. 
+
+The third sub-activity, find root causes, will be accomplished through a literature review. An in-depth analysis of each of the three EA frameworks will done to find specific shortcomings; instances where the framework provides support for centralized organizations and not decentralized organizations. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.7]{method_problem}
+\caption{Explicate problem activity}
+\label{fig:method_problem}
+\end{figure}
+
+\paragraph*{Outline artifact and define requirements}
+
+Figure \ref{fig:method_outline} outlines the major components of this activity:
+\begin{description}
+  \item[Sub-activities] These are ``outline artifact'' and ``define requirements''~\cite[Ch. 6]{johannessonPerjons2012}.
+  \item[Input] The fully explicated problem from the ``explicate problem'' activity. 
+  \item[Resources] Literature study of organizational theory on decentralized organizations. 
+  \item[Controls] None
+  \item[Output] Requirements for a decentralized EA. 
+\end{description}
+
+In the first sub-activity ``outline artifact'', the type of artifacts being developed will be specified. 
+
+In the second sub-activity, ``define requirements'', the requirements for the developed artifact will be elicited. This will be based on the fully explicated problem and the literature study on decentralized organizations.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.7]{method_outline}
+\caption{Outline artifact and define requirements activity}
+\label{fig:method_outline}
+\end{figure}
+
+\paragraph*{Design and develop artifact}
+
+Figure \ref{fig:method_design} outlines the major components of this activity:
+\begin{description}
+  \item[Sub-activities] \hfill \\ These are ``generate'' and ``search and select'' ~\cite[Ch. 7]{johannessonPerjons2012}.
+  \item[Input]  \hfill \\ Requirements for a decentralized EA. 
+  \item[Resources] \hfill \\ Literature study on peer-to-peer architectures. 
+  \item[Controls] \hfill \\ None.
+  \item[Output] \hfill \\ Prototype of one artifact for one aspect of an EA framework for decentralized organizations. 
+\end{description}
+
+In the ``generate'' sub-activity, different potential solutions, each covering a subset of the requirements from the ``outline artifact and define requirements activity'' will be outlined. This requires multiple artifacts as an EA framework is a large entity, composed of a number of different artifacts. In order to develop these artifacts, a literature study on peer-to-peer architectures has been conducted. Principles from peer-to-peer will be taken and applied as the basis for solutions meeting the specified requirements. Peer-to-peer architectures were chosen because they have offered solutions to decentralization in other domains (e.g. technical) and might therefore be able to provide solutions for the practice of EA. 
+
+In the ``search and select'' sub-activity, one or two of the outlined solutions (from the ``generate'' sub-activity) will be selected and elaborated on to create a prototype of one artifact for an EA framework for decentralized organizations. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.7]{method_design}
+\caption{Design and develop artifact activity}
+\label{fig:method_design}
+\end{figure}
+  
+\paragraph*{Demonstrate artifact}
+
+Figure \ref{fig:method_demo} outlines the major components of this activity:
+\begin{description}
+  \item[Sub-activities] These are ``choose or design case'' and ``apply artifact''~\cite[Ch. 8]{johannessonPerjons2012}.
+  \item[Input] Prototype of one artifact for one aspect of an EA framework for decentralized organizations. 
+  \item[Resources] Knowledge on the selected case (institution of higher education in Sweden). 
+  \item[Controls] A case study research strategy that will make use of interviews and a document study.
+  \item[Output]  
+\end{description}
+
+weak eval
+
+illustrative case study
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.7]{method_demo}
+\caption{Demonstrate artifact activity}
+\label{fig:method_demo}
+\end{figure}
+
+\paragraph*{Evaluate artifact}
+
+NOT DONE
+
+\subsection{Overall Research Process}
 
 
 
