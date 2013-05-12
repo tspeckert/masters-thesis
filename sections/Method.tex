@@ -79,33 +79,48 @@ After the data has been obtained, it is necessary to analyze it in order to unde
 
 This thesis work follows the framework by Johannesson and Perjons~\cite{johannessonPerjons2012} presented above in Section \ref{sec:framework}. The only change to their proposed framework is that the formal ``evaluate artifact'' activity will not be performed. This section will first elaborate on how the different activities will be accomplished and then outline the overall process. 
 
-As suggested by Johannesson and Perjons~\cite[Ch. 4]{johannessonPerjons2012}, the IDEF0 notation will be used for visualizing the various activities. In this notation, each activity as an input and output, controls in the form of research strategies and methods, and resources which is the knowledge base for the activity. 
+As suggested in~\cite[Ch. 4]{johannessonPerjons2012}, the IDEF0 notation will be used for visualizing the various activities. In this notation, each activity as an input and output, controls in the form of research strategies and methods, and resources which is the knowledge base for the activity. 
 
 \subsection{Case Study: An Institution of Higher Education in Sweden}
 \label{sec:case}
 
-This thesis work will use an institution of higher education in Sweden as an illustrative case study. 
+This thesis work will use an institution of higher education in Sweden as an illustrative case study. This case was chosen as an example of a decentralized organization with an \textit{implicit} EA, i.e., there is no formal EA framework used, but as they use IT extensively, some form of implicit architecture must exist. The disadvantage of this is that there is no use of modern EA frameworks in the institution, which weakens the link between the institution and the practice of EA. A second disadvantage of the case is that it is not possible to make any actual changes to the institution, meaning that is only an illustrative case study and as such, a formal evaluation of any created artifacts is not possible. 
+
+As a public institution, many official documents are available on its organizational structure, thus making a document study a viable research method. The documents that formed this study are described in Table~\ref{tab:doc_study}.
+
+\begin{table}  
+  \begin{tabular}[c]{| p{\dimexpr 0.4\textwidth-2\tabcolsep} |
+                       p{\dimexpr 0.6\textwidth-2\tabcolsep} | }
+    \hline
+    \textbf{Document} & \textbf{Description} \\
+    \hline
+    Institution's homepage & Contains descriptions of the different organizational areas of the institution as well its organizational structure \\
+    \hline
+    Authority delegation documents & These publicly available documents specify authority and delegations of said authority of the institution's organizational units \\
+    \hline
+    Rule book & The official rule book of the institution detailing rules and decisions that must be followed by the institution \\
+    \hline
+  \end{tabular}
+  \caption{\textbf{Documents forming the document study}}
+  \label{tab:doc_study}
+\end{table}
+
+Secondly, interviews...
+  outline interviewees
+  describe questions
 
 
-why chosen....
-
-
-good and bad....
-
-
-....
 
 \subsection{Research Activities}
-\paragraph*{Explicate problem}
+\subsubsection*{Explicate problem}
 
 Figure \ref{fig:method_problem} outlines the major components of this activity:
-
 \begin{description}
-  \item[Sub-activities] \hfill \\ These are ``define precisely'', ``motivate problem'' and ``find root causes''~\cite[Ch. 5]{johannessonPerjons2012}.
-  \item[Input] \hfill \\ The initial problem as described in Section \ref{sec:problem}.
+  \item[Sub-activities] These are ``define precisely'', ``motivate problem'' and ``find root causes''~\cite[Ch. 5]{johannessonPerjons2012}.
+  \item[Input] The initial problem as described in Section \ref{sec:problem}.
   \item[Resources] A literature review of the modern EA frameworks TOGAF, Zachman Framework, and FEA. These three frameworks were chosen due to their popularity and extensive available literature.
-  \item[Controls] \hfill \\ A case study research strategy that will make use of interviews and a document study. The case is detailed in Section \ref{sec:case}. 
-  \item[Output] \hfill \\ A fully explicated problem, specifically, the set of specific shortcomings of modern EA frameworks when applied to decentralized organizations determined in the ``find root causes'' sub-activity.
+  \item[Controls] A case study research strategy that will make use of interviews and a document study. The case is detailed in Section \ref{sec:case}. 
+  \item[Output] A fully explicated problem, specifically, the set of specific shortcomings of modern EA frameworks when applied to decentralized organizations determined in the ``find root causes'' sub-activity.
 \end{description}
 
 The first sub-activity, define precisely, will be accomplished with the use of the literature review. Here, the differences between centralized and decentralized  organizations will be precisely specified in order to show that there is a problem. 
@@ -121,7 +136,7 @@ The third sub-activity, find root causes, will be accomplished through a literat
 \label{fig:method_problem}
 \end{figure}
 
-\paragraph*{Outline artifact and define requirements}
+\subsubsection*{Outline artifact and define requirements}
 
 Figure \ref{fig:method_outline} outlines the major components of this activity:
 \begin{description}
@@ -143,20 +158,20 @@ In the second sub-activity, ``define requirements'', the requirements for the de
 \label{fig:method_outline}
 \end{figure}
 
-\paragraph*{Design and develop artifact}
+\subsubsection*{Design and develop artifact}
 
 Figure \ref{fig:method_design} outlines the major components of this activity:
 \begin{description}
-  \item[Sub-activities] \hfill \\ These are ``generate'' and ``search and select'' ~\cite[Ch. 7]{johannessonPerjons2012}.
-  \item[Input]  \hfill \\ Requirements for a decentralized EA. 
-  \item[Resources] \hfill \\ Literature study on peer-to-peer architectures. 
-  \item[Controls] \hfill \\ None.
-  \item[Output] \hfill \\ Prototype of one artifact for one aspect of an EA framework for decentralized organizations. 
+  \item[Sub-activities] These are ``generate'' and ``search and select'' ~\cite[Ch. 7]{johannessonPerjons2012}.
+  \item[Input]  Requirements for a decentralized EA. 
+  \item[Resources] Literature study on peer-to-peer architectures. 
+  \item[Controls] None.
+  \item[Output] Prototype of one artifact for one aspect of an EA framework for decentralized organizations. 
 \end{description}
 
 In the ``generate'' sub-activity, different potential solutions, each covering a subset of the requirements from the ``outline artifact and define requirements activity'' will be outlined. This requires multiple artifacts as an EA framework is a large entity, composed of a number of different artifacts. In order to develop these artifacts, a literature study on peer-to-peer architectures has been conducted. Principles from peer-to-peer will be taken and applied as the basis for solutions meeting the specified requirements. Peer-to-peer architectures were chosen because they have offered solutions to decentralization in other domains (e.g. technical) and might therefore be able to provide solutions for the practice of EA. 
 
-In the ``search and select'' sub-activity, one or two of the outlined solutions (from the ``generate'' sub-activity) will be selected and elaborated on to create a prototype of one artifact for an EA framework for decentralized organizations. 
+In the ``search and select'' sub-activity, one of the outlined solutions (from the ``generate'' sub-activity) will be selected and elaborated on to create a prototype of one artifact for an EA framework for decentralized organizations. 
 
 \begin{figure}
 \centering
@@ -165,20 +180,20 @@ In the ``search and select'' sub-activity, one or two of the outlined solutions 
 \label{fig:method_design}
 \end{figure}
   
-\paragraph*{Demonstrate artifact}
+\subsubsection*{Demonstrate artifact}
 
 Figure \ref{fig:method_demo} outlines the major components of this activity:
 \begin{description}
-  \item[Sub-activities] These are ``choose or design case'' and ``apply artifact''~\cite[Ch. 8]{johannessonPerjons2012}.
-  \item[Input] Prototype of one artifact for one aspect of an EA framework for decentralized organizations. 
-  \item[Resources] Knowledge on the selected case (institution of higher education in Sweden). 
-  \item[Controls] A case study research strategy that will make use of interviews and a document study.
-  \item[Output]  
+  \item[Sub-activities]  These are ``choose or design case'' and ``apply artifact''~\cite[Ch. 8]{johannessonPerjons2012}.
+  \item[Input]  Prototype of one artifact for one aspect of an EA framework for decentralized organizations. 
+  \item[Resources]  Knowledge on the selected case (institution of higher education in Sweden). 
+  \item[Controls]  A case study research strategy that will make use of interviews and a document study.
+  \item[Output] Proof-of-concept artifact of an EA framework. 
 \end{description}
 
-weak eval
+For the ``choose or design case'', an institution of higher education in Sweden has been selected. Details on the case are described in \ref{sec:case}.
 
-illustrative case study
+In the ``apply artifact'' sub-activity, the artifact will be applied to the case by creating a ``to-be'' architecture for the relevant aspect of the case. This ``to-be'' architecture will be the proof-of-concept for the prototype EA framework. 
 
 \begin{figure}
 \centering
@@ -187,12 +202,10 @@ illustrative case study
 \label{fig:method_demo}
 \end{figure}
 
-\paragraph*{Evaluate artifact}
+\subsubsection*{Evaluate artifact}
 
-NOT DONE
-
-\subsection{Overall Research Process}
-
-
+The focus of this thesis work is on explicating the problem of decentralization for EA and demonstrating a proof-of-concept of a partial solution. Consequently, the evaluate artifact phase is not done. 
 
 \section{Ethical Considerations}
+
+As the proof-of-concept does not involve any actual implementation, the ethical considerations for this research project are minimal and only involve withholding the identity of the case institution. 
