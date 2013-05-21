@@ -1,44 +1,28 @@
-The practice of EA is just one potential solution to the problems of business-IT alignment and enterprise integration. However, other potential solutions do exist, and this section will briefly outline a few of them, namely, enterprise modeling, Service-Oriented Architecture, and . In comparison with EA which While EA takes a holistic approach to the problem, 
-
-
-RELATED WORKS
-
-Enterprise Modeling
-  goal models
-  value models
-  process modeling
-  
-
-SOA
-  its architecture
-  Enterprise Service Bus
-
-
-Other Approaches to IT-Business Alignment
-  
-  The Strategy Triangle
+The practice of EA is just one potential solution to the problems of business-IT alignment. Furthermore it is a ``heavy-weight'' approach in that it aims to be a complete solution. However, other ``light-weight'' solutions do exist that focus on specific aspects of business-IT alignment and this section will briefly outline a few of them: specifically, enterprise modeling and enterprise integration. 
   
 \subsection{Enterprise Modeling}
 
 ``Enterprise Modeling is the art of externalizing enterprise knowledge which adds value to the enterprise or needs to be shared. It consists in making models of the structure, behavior and organization of the enterprise''~\cite{Vernadat200215}. Through modeling, practitioners aim to better understand the current or future organization and function an enterprise. To this end, common enterprise categories of enterprise modeling include goal, process, and value modeling. 
 
-\subsubsection{Business Goal Modeling}
+\paragraph*{Goal Modeling}
 
-Goal modeling aims to describe the goals of an enterprise, their interrelations, means for achieving these goals, and additional factors that impact them. A specific example of a goal modeling technique is the Business Motivation Model (BMM)~\cite{bmm2010}. In BMM, means, ends and influencers of an organization are modeled and assessed. Here, the focus is on understanding what an organization wants to achieve (i.e. goals). The relationship between an organizations goals and its means is described, though the specifics of the means are not. An EA, on the other hand, might use goal models, but if so, would use them as part of a bigger whole. This is in contrast with EA which takes a holistic approach in describing an entire enterprise, not only its goals.
+Goal modeling aims to describe the goals of an enterprise, their interrelations, means for achieving these goals, and additional factors that impact them. A specific example of a goal modeling technique is the Business Motivation Model (BMM)~\cite{bmm2010}. In BMM, means, ends and influencers of an organization are modeled and assessed. Here, the focus is on understanding what an organization wants to achieve (i.e. goals). The relationship between an organizations goals and its means is described, though the specifics of the means are not. 
+%An EA, on the other hand, might use goal models, but if so, would use them as part of a bigger whole. This is in contrast with EA which takes a holistic approach in describing an entire enterprise, not only its goals.
 
-\subsubsection{Business Process Modeling}
+\paragraph*{Process Modeling}
 
-According to Roshen, "[a] business process is a collection of related, structured activities or tasks that produces a specific product"~\cite{roshen2009soa}. Business processes are a complicated matter, and as such, process modeling is used to describe them in a detailed and accurate manner, in order to understand how an organization creates some output. Many different modeling languages exist, for example, Business Process Model and Notation (BPMN)~\cite{model2011notation}, Event-driven Process Chain (EPC)~\cite[Ch. 6]{scheer2005process}, and UML Activity Diagrams~\cite{uml241}. Processes can exist within an organization (intraorganizational) or they can interact with processes from other organizations (interorganizational). According to Weske~\cite{weske2012business}, "the primary focus of intraorganizational business processes is the streamlining of the internal processes by eliminating activities that do not provide value". Interorganizational processes, on the other hand, aim to specify and streamline interactions with other organizations. 
+According to Roshen, ``[a] business process is a collection of related, structured activities or tasks that produces a specific product''~\cite{roshen2009soa}. Business processes are a complicated matter, and as such, process modeling is used to describe them in a detailed and accurate manner, in order to understand how an organization creates some output. Many different modeling languages exist, for example, Business Process Model and Notation (BPMN)~\cite{model2011notation}, Event-driven Process Chain (EPC)~\cite[Ch. 6]{scheer2005process}, and UML Activity Diagrams~\cite{uml241}. Processes can exist within an organization (intraorganizational) or they can interact with processes from other organizations (interorganizational). According to Weske~\cite{weske2012business}, ``the primary focus of intraorganizational business processes is the streamlining of the internal processes by eliminating activities that do not provide value''. Interorganizational processes, on the other hand, aim to specify and streamline interactions with other organizations. 
 
-\subsubsection{Business Value Modeling}
+\paragraph*{Business Value Modeling}
 
-m1998business
-
-Value 
-
-REA, e3
-
+Business value modeling depicts the exchange of value between entities. Examples of value modeling languages are e3 Value~\cite{Gordijn2001e3value} and REA~\cite{pavel2006model}. Business value modeling is used to understand what an organization does in order to create value. This allows it to be used as a starting point for the exploration of business ideas, design of processes, or development of systems~\cite{johannesson2011lecture}.
 
 \subsection{Enterprise Integration}
 
-``Enterprise Integration (El) consists in breaking down organizational barriers to improve synergy within the enterprise so that business goals are achieved in a more productive and efficient way.''~\cite{Vernadat200215}
+According to Vernadat, ``Enterprise Integration (EI) consists in breaking down organizational barriers to improve synergy within the enterprise so that business goals are achieved in a more productive and efficient way''~\cite{Vernadat200215}. To accomplish this, Vernadat states that EI relies ``free but controlled flow of information and knowledge, and the coordination of actions''. To this end, three general perspectives on EI exist: information-oriented, service-oriented, and process-oriented~\cite{zdravkovic2012}.
+
+Information-oriented integration is aimed at the integration of data. Two key components of information-oriented integration are standardizing how data is represented and enabling efficient access to it throughout an enterprise. Typical approaches to this are: data warehousing~\cite{kimball2006data}, where data from across the enterprise is consolidated to a single data warehouse in batches; data federation~\cite{haas2002data}, where a single system is used to query multiple data sources; and data replication~\cite{wiesmann2000database}, where data is copied between data sources at regular intervals. 
+
+Service-oriented integration is aimed the integration of functionality. The dominant architecture for service-oriented integration is Service-Oriented Architecture (SOA). Here, functionality is organized into services--worked performed by one application for another application--which have the characteristics of  reusability and composability~\cite{roshen2009soa}. These characteristics are important as they allow for services to be shared across and between enterprises (reusability), and for multiple services to be used together to create a new service (composability). 
+
+Process-oriented integration uses enterprise knowledge in conjunction with systems knowledge in order to integrate on the business process level~\cite{Vernadat200215}. Process-oriented integration builds on service-oriented integration in order to automate and order services for the production of some product. This can be done in both intra- and interorganization contexts, and is accomplished with the use of process models and systems dedicated to process management~\cite{dumas2005process}. A key advantage of process integration is that it provides a basis for communication between the IT and business sides of an enterprise~\cite{dumas2005process}.
