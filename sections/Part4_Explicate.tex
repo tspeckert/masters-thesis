@@ -1,6 +1,6 @@
-\subsection{Define Precisely}
+\subsection{Iteration 1}
 
-\subsubsection*{Iteration 1}
+\subsubsection{Define Precisely}
 
 \paragraph*{Classification of Organizational Structures}
 
@@ -17,34 +17,45 @@ Figure \ref{fig:taxonomy} maps the organizational forms presented in Section \re
 \label{fig:taxonomy}
 \end{figure}
 
+%TODO reflect in method
+
 \paragraph*{Role of EA}
 
 As detailed in Section \ref{sec:ea}, Enterprise Architecture is a discipline that allows an organization to construct and evolve its IT according to its needs. It provides a methodology and sets up a framework for assessing the current state of IT (architecture As-Is), for agreeing upon and communicating its future state (architecture To-Be), for planning, and for carrying out this transformation. By providing this framework, the modern EA frameworks of TOGAF, Zachman and FEA aim to solve the problem of business-IT alignment from the ground up through proper design. 
 
 \paragraph*{The Problem} 
 
-The EA frameworks of TOGAF, Zachman and FEA are primarily supportive of organizations with an structural form on the High Centralization end of the centralization continuum (Figure \ref{fig:taxonomy}). This is a problem for organizations on the High Decentralization end of the spectrum, who will likely encounter issues if they implement EA as it is currently described in TOGAF, Zachman, and FEA. 
+The EA frameworks of TOGAF, Zachman and FEA are primarily supportive of organizations with an structural form on the High Centralization end of the centralization continuum (Figure \ref{fig:taxonomy} ). This is a problem for organizations on the High Decentralization end of the spectrum, who will likely encounter issues if they implement EA as it is currently described in TOGAF, Zachman, and FEA. 
 
-
-  
-
-\subsubsection*{Iteration 2}
-
-DSV has decent/federated structure, needs supporting EA
 
 % **********************************************************************
 % **********************************************************************
 % **********************************************************************
 
-\subsection{Motivate problem}
+\subsubsection{Motivate problem} %WHY PROBLEM IN IMPORTANT/RELEVANT
+%TODO reflect in method
 
-\subsubsection*{Iteration 1}
+The problem of EA frameworks not being ideally suited for organizations on the High Decentralization end of the spectrum is important because: 1) organizations are becoming increasingly decentralized, and 2) EA can be beneficial to decentralized organizations. 
 
-\paragraph*{Advantages of EA}
+Organizations on the High Centralization end of the continuum fail to adapt to dynamic environments due to their inertia in decision making and lack of agility. As a result, organizations are moving more towards the High Decentralization, with organizational structures such as Flat and Collaborative Networks, where organizational subunits and individuals are being given an increasing amount of autonomy and control. THIS IS SUPPORTED HERE AND HERE AND HERE AND HERE AND HERE AND HERE. These structures support transparent or dynamically changing boundaries, agile processes, interactions aligned in real-time with changing business goals, virtual collaborations; all of which are technology-enabled capabilities.
 
-Why EA is good... 
+Decentralization transforms the role of company's authority and makes relationships inside and between different company's divisions much more complex. Planning and governance in different functional areas, including IT,  is no longer centrally ensured. As a consequence, collaboration and information sharing between subunits gain extreme importance. This is a significant change from the traditional management and operation styles of an organization and requires major changes in organizational processes. 
 
-Consequently, changes to these EA frameworks in order to improve their support for decentralization would be beneficial for decentralized organizations. 
+%more links to state of art
+
+While technology serves as an important catalyst for organizational transformations, it is important to utilize the right IT resources in a manner that is supportive of the organization. To accomplish this in decentralized organizations, novel EA processes, principles and concepts are needed to both handle the IT resources and to foster business/ICT co-evolution in decentralized environments. Consequently, changes to these EA frameworks in order to improve their support for decentralization would be beneficial for decentralized organizations. 
+
+
+
+% **********************************************************************
+% **********************************************************************
+% **********************************************************************
+
+\subsubsection{Find root causes}
+
+The de-facto EA methodologies rely on organizational properties such as centralized management, global company identity, etc.  that are getting obsolete with progressive decentralization.  Consequently, implementation of these methodologies in decentralized organization becomes difficult and inefficient and  the role of EA as a driver for IT transformations is getting compromised.
+
+
 
 \paragraph*{Key Differences Between Decentralized and Centralized Organizations}
 
@@ -98,25 +109,9 @@ coopetition
 %making powers.
 
 
-\paragraph*{Organizational Trend Towards Decentralization}
-  
-\subsubsection*{Iteration 2}
+\paragraph*{TOGAF: Concepts supporting centralized organizations}
 
-...
-
-% **********************************************************************
-% **********************************************************************
-% **********************************************************************
-
-\subsection{Find root causes}
-
-\subsubsection*{Iteration 1}
-
-\subsection{TOGAF}
-
-\subsubsection{Concepts supporting a centralized organization}
-
-\paragraph*{EA Method and EA Engine}
+\subparagraph*{EA Method and EA Engine}
 TOGAF outlines a formal approach to architecture governance which involves the setting up of an Architecture Board ``to oversee the implementation of the [architecture] strategy''~\cite[Ch. 47]{togaf9.1}. This board has an important role in Architecture Governance, such as ``[p]roviding the basis for all decision-making with regard to the architectures''~\cite[Ch. 47]{togaf9.1} and enforcing architecture compliance. 
 
 %The TOGAF Architecture Governance Framework suggests guidelines for developing a formal governance structure for the Enterprise Continuum (and thus, all the architectural artifacts) and architecture processes. 
@@ -131,13 +126,13 @@ Another example: after the completion of ``Phase A: Architecture Vision'', TOGAF
 
 A third example is an entire set of architectures at the strategic level of the Architecture Landscape which is meant for the ``executive level''~\cite[Ch. 20]{togaf9.1}.
 
-\paragraph*{EA Description}
+\subparagraph*{EA Description}
 TOGAF suggests the development of architecture principles that ``...define the underlying general rules and guidelines for the use and deployment of all IT resources and assets across the enterprise''~\cite[Ch. 23]{togaf9.1}. Having a central set of principles that is to be applied to an entire organization supports centralization.
 
 TOGAF includes the concept of an Architecture Repository, which is to hold the entirety of the Architecture Landscape in addition to other architecture-related information. The idea of a single place to store all information is highly supportive of centralization. 
 
-\subsubsection{Concepts supporting decentralized organization}
-\paragraph*{EA Method and EA Engine}
+\paragraph*{TOGAF: Concepts supporting decentralized organizations}
+\subparagraph*{EA Method and EA Engine}
 TOGAF primarily supports some level of decentralization through the concept of \textit{partitions}. It suggests dividing the Architecture Landscape into separate parts in order to support multiple architecture teams working concurrently and conflicting architectures in different organizational units. This enables ``federated architectures — independently developed, maintained, and managed architectures that are subsequently integrated within an integration framework''~\cite[Ch. 40.3]{togaf9.1}. 
 
 Furthermore, ``[f]ederated architectures typically are used in governments and conglomerates, where the separate organizational units need separate architectures''~\cite[Ch. 40.3]{togaf9.1}. This supports the idea of different organizational units developing their own individual architectures. The mechanism for integrating the individual architectures under the roof of the corporate architecture is not explicit. 
@@ -145,11 +140,9 @@ Furthermore, ``[f]ederated architectures typically are used in governments and c
 
 TOGAF additionally indirectly supports decentralization through the suggestion that the entire TOGAF process be\textit{ tailored to fit the needs of the enterprise}. This is done in the preliminary phase of the ADM. In theory, this would allow TOGAF to support any kind of enterprise. The guidelines provided for this, however, are minimal. 
 
-\subsection{Zachman}
+\paragraph*{Zachman: Concepts supporting centralized organizations}
 %Limited perspectives?
-\subsubsection{Concepts supporting centralized organization}
-
-\paragraph*{EA Description}
+\subparagraph*{EA Description}
 The Zachman Framework aims to model a complete enterprise in a single, ``periodic table of elements''~\cite{Bente2012}. It attempts to break down an enterprise into a matrix of 36 elements, with alignment and composite integration relations defined between these elements. 
 
 The perspectives of Zachman Framework line up with a bureaucratic organizational structure: the defined views (from executive to user) constitute an explicit organizational hierarchy. Clear separation between domains make this framework suitable for matrix organizations as well. 
@@ -159,44 +152,43 @@ The lack of flexibility in definition of domains and views and the requirement t
 
 %Furthermore, the perspectives of Zachman Framework line up with a bureaucratic organizational structure (e.g. executive and business management perspectives). For a traditional, centralized organization these perspectives make a lot of sense. 
 
-\paragraph*{EA Method and EA Engine}
+\subparagraph*{EA Method and EA Engine}
 
-Providing a schema for organizing architectural artifacts of an enterprise, the Zachman Framework does not imply any particular method for collecting these artifacts (what we call EA Method in Fig. \ref{fig:EA_general}).
+Providing a schema for organizing architectural artifacts of an enterprise, the Zachman Framework does not imply any particular method for collecting these artifacts (what we call EA Method in Fig. \ref{fig:EA_general} ).
 Neither is suggests the set of structures that we call EA Engine. 
 
 Therefore, tailoring and  implementation of Zachman framework for a concrete organizational structure depends on experience of the EA (consultancy) team.
 
 To summarize, the Zachman Framework provides a detailed taxonomy of EA artifacts that supports a hierarchical view on the organization. The application of this framework in decentralized (flat, adhocracy) organizations remains unclear.
 
-\subsection{FEA}
-\subsubsection{Concepts supporting centralized organization}
-\paragraph*{EA Description}
+\paragraph*{FEA: Concepts supporting centralized organizations}
+\subparagraph*{EA Description}
 Through the use of a common set of \textit{reference models}, FEA prescribes standards that are to be followed throughout the organization. This limits the flexibility that the individual organizational units have and makes this framework suitable for bureaucratic organizations with a high level of standardization of its processes.
 
 In FEA, however, individual organizational units have the freedom to develop their own architecture as long as it fits in to the set standards. This supports some level of decentralization and suits to organizations with federal structure, where individual units have input into decisions. 
 
-\paragraph*{EA Method and EA Engine}
+\subparagraph*{EA Method and EA Engine}
 
-Segment architecture development is defined by FEA as a collaborative approach conducted by an integrated project team (IPT) comprising business subject matter experts, enterprise architects and technical subject matter experts.  FEA defines a set of segment architecture stakeholders and their roles (Table 2-2 in the document \cite{FEA_PMO2007}) in segment architecture development.   For example, the role of senior management is defined to set the agency strategic goals; chief architect and EA team are appointed to supervise the architecture development process, coordinate the activities of other stakeholders and communicate and share the information between segments when needed; IPT activities and meetings are coordinated and managed by a Program Manager. The Program Manager should monitor progress, evaluate segment architecture completion and demonstrate results. These roles naturally line up with the centralized to federal organization of IT (Fig.\ref{fig:taxonomy}).
+Segment architecture development is defined by FEA as a collaborative approach conducted by an integrated project team (IPT) comprising business subject matter experts, enterprise architects and technical subject matter experts.  FEA defines a set of segment architecture stakeholders and their roles (Table 2-2 in the document \cite{FEA_PMO2007} ) in segment architecture development.   For example, the role of senior management is defined to set the agency strategic goals; chief architect and EA team are appointed to supervise the architecture development process, coordinate the activities of other stakeholders and communicate and share the information between segments when needed; IPT activities and meetings are coordinated and managed by a Program Manager. The Program Manager should monitor progress, evaluate segment architecture completion and demonstrate results. These roles naturally line up with the centralized to federal organization of IT (Fig.\ref{fig:taxonomy} ).
 
 According to FEA, ``Stakeholder commitment must be attained to support each step in this [development] process..''~\cite{FEA_PMO2007}.
  
 The mechanism for integrating the segment architectures under the roof of the corporate architecture is  assured by specific governance and management processes, which are, tough implying different stakeholders, remain centralized. 
 
-All steps of segment architecture development (Fig. \ref{fig:FEA_segmentDev}) involve/supervised by the Program manager and/or chief architect or Capital Planning and Investment Control (CPIC) lead, pointing on centralized management and budgeting.
+All steps of segment architecture development (Fig. \ref{fig:FEA_segmentDev} ) involve/supervised by the Program manager and/or chief architect or Capital Planning and Investment Control (CPIC) lead, pointing on centralized management and budgeting.
 
 Transition strategy is defined for the agency level though it is assessed on the global level. Governance-wide collaboration and reuse based on standards is outlined by FEA as an important part of RA transition strategy.
 
-\subsubsection{Concepts supporting decentralized organization}
-\paragraph*{EA Description}
+\paragraph*{FEA: Concepts supporting decentralized organizations}
+\subparagraph*{EA Description}
 
 The resulting segment architecture is positioned by FEA as a shared vision for business and IT transformation within a core mission area or common service. Each segment can have its own architecture that responds to its business needs.
 
-\paragraph*{EA Method and EA Engine}
+\subparagraph*{EA Method and EA Engine}
 
 The development of \textit{segment architectures} is described as a collaborative process between EA architects and other stakeholders. The accent is placed on the ``reconciliation'' of the segment architecture with an agency architecture and cross-agency initiative, emphasizing the importance of  cross-agency collaboration, common opportunities and initiatives.
 
-Architectural analysis and architectural definition steps of segment architecture development (Fig. \ref{fig:FEA_segmentDev}) involve business owners at the agency level who define business and information management requirements for the segment. This allows to ensure the local, agency-level interests within a corporation. 
+Architectural analysis and architectural definition steps of segment architecture development (Fig. \ref{fig:FEA_segmentDev} ) involve business owners at the agency level who define business and information management requirements for the segment. This allows to ensure the local, agency-level interests within a corporation. 
 
 FEA is targeting the groups of independent federal agencies with an objective to increase their inter-operability and quality of service they are offering for citizens. Among three EA methodologies considered in our study, FEA is the only one recognizing the need of inter- and intra-agency cooperation and communication. Nevertheless, many of the concepts on which the EA method and EA engine of FEA are grounded remain strongly centralized. Again, this supports our initial claim.
 
@@ -241,4 +233,26 @@ Peer production for relevance/accreditation (e.g. decision making in budgeting, 
 \end{tabular}
 \end{table}
 
-\subsubsection*{Iteration 2}
+
+% **********************************************************************
+% **********************************************************************
+% **********************************************************************
+
+
+\subsection{Iteration 2}
+
+\subsubsection*{Define Precisely}
+
+DSV has decent/federated structure, needs supporting EA
+
+% **********************************************************************
+% **********************************************************************
+% **********************************************************************
+
+\subsubsection*{Motivate problem}
+
+% **********************************************************************
+% **********************************************************************
+% **********************************************************************
+
+\subsubsection*{Find root causes}
