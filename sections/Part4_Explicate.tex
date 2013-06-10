@@ -25,7 +25,7 @@ As detailed in Section \ref{sec:ea}, Enterprise Architecture is a discipline tha
 
 \paragraph*{The Problem} 
 
-The EA frameworks of TOGAF, Zachman and FEA are primarily supportive of organizations with an structural form on the High Centralization end of the centralization continuum (Figure \ref{fig:taxonomy} ). This is a problem for organizations on the High Decentralization end of the spectrum, who will likely encounter issues if they implement EA as it is currently described in TOGAF, Zachman, and FEA. 
+The EA frameworks of TOGAF, Zachman and FEA are primarily supportive of organizations with an structural form on the High Centralization end of the centralization continuum (Figure \ref{fig:taxonomy}). This is a problem for organizations on the High Decentralization end of the spectrum, who will likely encounter issues if they implement EA as it is currently described in TOGAF, Zachman, and FEA. Therefore, the addition of specific guidelines to these frameworks that are supportive of decentralization would improve their support of decentralized organizations. 
 
 
 % **********************************************************************
@@ -35,15 +35,16 @@ The EA frameworks of TOGAF, Zachman and FEA are primarily supportive of organiza
 \subsubsection{Motivate problem} %WHY PROBLEM IN IMPORTANT/RELEVANT
 %TODO reflect in method
 
-The problem of EA frameworks not being ideally suited for organizations on the High Decentralization end of the spectrum is important because: 1) organizations are becoming increasingly decentralized, and 2) EA can be beneficial to decentralized organizations. 
+The problem of EA frameworks not being ideally suited for organizations on the High Decentralization end of the spectrum is important because: 1) organizations are becoming increasingly decentralized~\cite{acemoglu2007technology,fulk1995}, and 2) like centralized organizations, decentralized organizations can potentially benefit from the practice of EA.
 
-Organizations on the High Centralization end of the continuum fail to adapt to dynamic environments due to their inertia in decision making and lack of agility. As a result, organizations are moving more towards the High Decentralization, with organizational structures such as Flat and Collaborative Networks, where organizational subunits and individuals are being given an increasing amount of autonomy and control. THIS IS SUPPORTED HERE AND HERE AND HERE AND HERE AND HERE AND HERE. These structures support transparent or dynamically changing boundaries, agile processes, interactions aligned in real-time with changing business goals, virtual collaborations; all of which are technology-enabled capabilities.
+Organizations on the High Centralization end of the continuum fail to adapt to dynamic environments due to their inertia in decision making and lack of agility \cite{fulk1995,pearlson2009}. As a result, organizations are moving towards High Decentralization, with organizational structures such as Collaborative Networks \cite{Camarinha-Matos2005} and Flat, where organizational subunits and individuals are being given an increasing amount of autonomy and control. Decentralized structures support transparent or dynamically changing boundaries, agile processes, interactions aligned in real-time with changing business conditions, virtual collaborations; all of which are technology-enabled capabilities~\cite{applegate1988,fulk1995}.
 
-Decentralization transforms the role of company's authority and makes relationships inside and between different company's divisions much more complex. Planning and governance in different functional areas, including IT,  is no longer centrally ensured. As a consequence, collaboration and information sharing between subunits gain extreme importance. This is evident in the challenges of decentralized organizations outlined in~\cite{caruso2008boundaries}. This is a significant change from the traditional management and operation styles of an organization and requires major changes in organizational processes. 
+
+Decentralization means a significant change from the traditional management and operation styles of an organization and requires major changes in organizational processes. It transforms the role of authority and makes relationships inside and between different subunits much more complex. Planning and governance in different functional areas, including IT, is no longer centrally ensured. As a consequence, collaboration and information sharing between subunits gain extreme importance. This is evident in the challenges of decentralized organizations outlined in~\cite{caruso2008boundaries}.  
 
 %TODO add more sources re: importance of communication/information sharing
 
-While technology serves as an important catalyst for organizational transformations \cite{fulk1995,applegate1988}, it is important to utilize the right IT resources in a manner that is supportive of the organization. To accomplish this in decentralized organizations, novel EA processes, principles and concepts are needed to both handle the IT resources and to foster business/ICT co-evolution in decentralized environments. Consequently, changes to these EA frameworks in order to improve their support for decentralization would be beneficial for decentralized organizations. 
+While technology serves as an important catalyst for organizational transformations, it is important to utilize the right IT resources in a manner that is supportive of the organization. To accomplish this in decentralized organizations, novel EA processes, principles and concepts are needed to both handle the IT resources and to foster business/ICT co-evolution in decentralized environments. The de-facto EA frameworks rely on organizational properties that are becoming obsolete with progressive decentralization.  Due to this, implementation of these frameworks in decentralized organization becomes difficult and inefficient and the role of EA as a driver for IT transformations is becoming compromised. In order to deal with progressive decentralization, some changes or additions to these EA frameworks are necessary in order to improve their support for decentralization.
 
 
 
@@ -53,44 +54,24 @@ While technology serves as an important catalyst for organizational transformati
 
 \subsubsection{Find root causes}
 
-The de-facto EA methodologies rely on organizational properties such as centralized management, global company identity, etc.  that are getting obsolete with progressive decentralization.  Consequently, implementation of these methodologies in decentralized organization becomes difficult and inefficient and  the role of EA as a driver for IT transformations is getting compromised.
 
+The root cause of the discrepancy between current EA frameworks and decentralization lies in the fact that centralized and decentralized organizations have significantly different properties that are not always fully supported by EA. This section outlines these properties and specific areas of TOGAF, Zachman, and FEA that are supportive and not supportive of them. 
 
+\paragraph*{Properties that differ between centralized and decentralized organizations}
 
-\paragraph*{Key Differences Between Decentralized and Centralized Organizations}
-
-Different organizational structures requires different EA...
- 
-Decentralized organizations face different challenges...
-
-others:
-Central: formal authority, standardization and rules in operations and in IT
-Decentral:  Decentralized organizations lean towards lateral coordination characterized by meetings, task forces, coordinating roles, matrix structures, and networks [22].
-Environment (stable vs unstable)
-Control (more in top management in Centralized)
-Division of labor
-Conflicting goals
-Communication lines
-coopetition
-
+A number of key properties of organizations and how they can differ between centralized and decentralized organizations have been identified.  These properties are detailed in Table \ref{org_characteristics}.
 
 \begin{table}
-\caption{Cent vs Decent Characteristics}
+\caption{Organizational Properties}
 \label{org_characteristics}
 %%\begin{tabular}{l p{0.28\textwidth}}
-\begin{tabular}{ | l | p{0.25\textwidth}| p{0.25\textwidth} |}
+\begin{tabular}{ | p{0.25\textwidth} | p{0.35\textwidth}| p{0.35\textwidth} |}
 %
 \hline
 %
-\textbf{Characteristic} & 
+\textbf{Property} & 
 \textbf{Centralized} &
 \textbf{Decentralized}  \\
-%
-\hline
-%
-Goals & 
-Organization-wide goals set by upper management &
-Frequently conflicting goals, but individual entities in the organization are working towards meeting common ones~\cite{Camarinha-Matos2005}
 %
 \hline
 %
@@ -100,17 +81,15 @@ Geographically distributed with a reliance on IS to work together \cite{applegat
 %
 \hline
 %
-Authority, decision rights and regulations & 
-Decision rights are strictly defined and work their way down from the top \cite{Weill2004,pearlson2009}; strict governance and control by upper management \cite{pearlson2009,applegate1988}; rigid structuring of accountability and responsibilities \cite{applegate1988}; standard methods and procedures \cite{mintzberg1981} &
-Authority and decision-making rights are pushed down to the level of groups, units or even individuals \cite{Weill2004,pearlson2009,robbins1997,Camarinha-Matos2005}; individuals can define their own roles and responsibilities \cite{valveHandbook} \\
+Coordination: authority, decision rights, standards and regulations & 
+\textit{Vertical coordination}: decision rights are strictly defined and work their way down from the top \cite{Weill2004,pearlson2009}; strict governance and control by upper management \cite{pearlson2009,applegate1988}; rigid structuring of accountability, roles and responsibilities \cite{applegate1988}; standard methods and procedures \cite{mintzberg1981}; homogeneous goals set by high-level authorities \cite{Bolman2008} &
+\textit{Lateral coordination}: authority and decision-making rights are pushed down to the level of groups, units or even individuals \cite{Weill2004,pearlson2009,robbins1997,Camarinha-Matos2005}; individuals can define their own roles and responsibilities \cite{valveHandbook}; heterogeneous goals, but individual entities in the organization are collaboratively working towards some common or complementing ones~\cite{Camarinha-Matos2005} \\
 %
 \hline
 %
-Communication patterns \cite{thompson1967,pearlson2009,applegate1988} & 
-hierarchy manages the interdependencies between the different sub-units of organization and often makes direct interactions and communications unnecessary \cite{thompson1967} 
-communication lines are strictly defined and work their way down from the top.~\cite{pearlson2009} 
-rigidly structuring "communication, responsibility, and accountability to help reduce complexity and provide  stability"~\cite{applegate1988} &
-less formalized communication lines~\cite{pearlson2009}, and more fluid, project oriented teams.~\cite{applegate1988} \\
+Communication patterns  & 
+Communication patterns follow the hierarchy \cite{pearlson2009,applegate1988}; direct interactions and communications are often unnecessary \cite{thompson1967}; &
+Informal communication lines~\cite{pearlson2009}; flexible, constantly changing communication lines~\cite{ahuja1998network}; fluid, project oriented teams.~\cite{applegate1988} \\
 %
 \hline
 %
@@ -119,71 +98,33 @@ less formalized communication lines~\cite{pearlson2009}, and more fluid, project
 
 
 
-
-
-
-
-
-%Such organization structures are
-%grounded on a sustainable collaboration between partners
-%without any centralized control.
-
-%collaborative
-%networks (CN). Camarinha-Matos and Afsarmanesh
-%define collaborative networks as being composed of ”a variety
-%of entities (e.g., organizations and people) that are largely
-%autonomous, geographically distributed, and heterogeneous
-%in terms of their: operating environment, culture, social
-%capital, and goals.” [24] Three common characteristics in
-%various CNs are autonomy in the individual entities, a drive
-%towards meeting common or complementing goals, and the
-%use of an agreed-upon framework for collaboration.
-
-
-%According to Robbins [18], organizational structure has
-%three components: complexity, formalization and centralization.
-%Complexity refers to the degree to which activities
-%within the organization are differentiated; Formalization
-%refers to the degree to which work is standardized; Centralization
-%refers to the degree to which decision making is
-%concentrated at one point in the organization.
-
-%geographical
-%or territorial concentration or dispersion of operations,
-%functions, extent of concentration or delegation of decision
-%making powers.
-
-
 \paragraph*{TOGAF: Concepts supporting centralized organizations}
 
 \subparagraph*{EA Method and EA Engine}
 TOGAF outlines a formal approach to architecture governance which involves the setting up of an Architecture Board ``to oversee the implementation of the [architecture] strategy''~\cite[Ch. 47]{togaf9.1}. This board has an important role in Architecture Governance, such as ``[p]roviding the basis for all decision-making with regard to the architectures''~\cite[Ch. 47]{togaf9.1} and enforcing architecture compliance. 
 
-%The TOGAF Architecture Governance Framework suggests guidelines for developing a formal governance structure for the Enterprise Continuum (and thus, all the architectural artifacts) and architecture processes. 
-
-Architecture board concept suits well for the organization with strong centralization in IT (Centralized IT to Federal IT in Fig. \ref{fig:taxonomy}.  Having a single entity responsible for high-level decision making fits in with the concept of a Centralized IT organization. TOGAF does suggest that the board has enterprise-wide representation~\cite[Ch. 47]{togaf9.1} which may support some level of decentralization, however it suggests the representation comes in the form of ``senior managers''; a concept primarily from traditional organization structures. 
+Architecture board concept suits well for the organization with strong centralization in IT (Centralized IT to Federal IT in Fig. \ref{fig:taxonomy}.  Having a single entity responsible for high-level decision making is an aspect of vertical coordination  and as such,  fits in with the concept of a Centralized IT organization. TOGAF does suggest that the board has enterprise-wide representation~\cite[Ch. 47]{togaf9.1} which may support some level of decentralization, however it suggests the representation comes in the form of ``senior managers''; a concept which is again characteristic of vertical coordination. 
 
 Throughout TOGAF, references are made to the existence of a bureaucratic or hierarchical centralized structure in place: 
 
-For example, an important part of the preliminary phase [REF] is to set up a \textit{formal governance framework} for all architectural material, a concept that is related to the rigid forms of traditional organizational structure. 
+For example, an important part of the preliminary phase is to set up a \textit{formal governance framework} for all architectural material, a concept that is related to the rigid forms of traditional organizational structure. 
 
 Another example: after the completion of ``Phase A: Architecture Vision'', TOGAF requires approval of the current vision of the architecture. This requirement of approval assumes the existence of someone with a higher level of decision-making authority to give approval. 
 
 A third example is an entire set of architectures at the strategic level of the Architecture Landscape which is meant for the ``executive level''~\cite[Ch. 20]{togaf9.1}.
 
 \subparagraph*{EA Description}
-TOGAF suggests the development of architecture principles that ``...define the underlying general rules and guidelines for the use and deployment of all IT resources and assets across the enterprise''~\cite[Ch. 23]{togaf9.1}. Having a central set of principles that is to be applied to an entire organization supports centralization.
+TOGAF suggests the development of architecture principles that ``...define the underlying general rules and guidelines for the use and deployment of all IT resources and assets across the enterprise''~\cite[Ch. 23]{togaf9.1}. Having a set of principles that is applied to an entire organization is characteristic of vertical coordination and therefore supportive of centralization. 
 
 TOGAF includes the concept of an Architecture Repository, which is to hold the entirety of the Architecture Landscape in addition to other architecture-related information. The idea of a single place to store all information is highly supportive of centralization. 
 
 \paragraph*{TOGAF: Concepts supporting decentralized organizations}
 \subparagraph*{EA Method and EA Engine}
-TOGAF primarily supports some level of decentralization through the concept of \textit{partitions}. It suggests dividing the Architecture Landscape into separate parts in order to support multiple architecture teams working concurrently and conflicting architectures in different organizational units. This enables ``federated architectures — independently developed, maintained, and managed architectures that are subsequently integrated within an integration framework''~\cite[Ch. 40.3]{togaf9.1}. 
+TOGAF primarily supports some level of lateral coordination and decentralization through the concept of \textit{partitions}. It suggests dividing the Architecture Landscape into separate parts in order to support multiple architecture teams working concurrently and conflicting architectures in different organizational units. This enables ``federated architectures — independently developed, maintained, and managed architectures that are subsequently integrated within an integration framework''~\cite[Ch. 40.3]{togaf9.1}. 
 
 Furthermore, ``[f]ederated architectures typically are used in governments and conglomerates, where the separate organizational units need separate architectures''~\cite[Ch. 40.3]{togaf9.1}. This supports the idea of different organizational units developing their own individual architectures. The mechanism for integrating the individual architectures under the roof of the corporate architecture is not explicit. 
 
-
-TOGAF additionally indirectly supports decentralization through the suggestion that the entire TOGAF process be\textit{ tailored to fit the needs of the enterprise}. This is done in the preliminary phase of the ADM. In theory, this would allow TOGAF to support any kind of enterprise. The guidelines provided for this, however, are minimal. 
+TOGAF additionally indirectly supports decentralization through the suggestion that the entire TOGAF process be\textit{ tailored to fit the needs of the enterprise}. This is done in the preliminary phase of the ADM. This allows TOGAF to support any kind of enterprise, however, the guidelines provided for this are minimal. 
 
 \paragraph*{Zachman: Concepts supporting centralized organizations}
 %Limited perspectives?
@@ -193,9 +134,7 @@ The Zachman Framework aims to model a complete enterprise in a single, ``periodi
 The perspectives of Zachman Framework line up with a bureaucratic organizational structure: the defined views (from executive to user) constitute an explicit organizational hierarchy. Clear separation between domains make this framework suitable for matrix organizations as well. 
 %(e.g. executive and business management perspectives).
 
-The lack of flexibility in definition of domains and views and the requirement to fill in the matrix - is perhaps the Zachman Frameworks main shortcoming with respect to decentralization. A primary aspect of decentralized organizations is their high level of flexibility. For a decentralized organization where both roles and domains are not uniformly defined (implicit) for sub-units, the use of the Zachman Framework becomes difficult if at all possible.
-
-%Furthermore, the perspectives of Zachman Framework line up with a bureaucratic organizational structure (e.g. executive and business management perspectives). For a traditional, centralized organization these perspectives make a lot of sense. 
+The lack of flexibility in definition of domains and views and the requirement to fill in the matrix - is perhaps the Zachman Frameworks main shortcoming with respect to decentralization. A primary aspect of decentralized organizations is their high level of flexibility. For a decentralized organization where both roles and domains are not uniformly defined (implicit) for subunits, the use of the Zachman Framework becomes difficult if at all possible.
 
 \subparagraph*{EA Method and EA Engine}
 
@@ -208,19 +147,17 @@ To summarize, the Zachman Framework provides a detailed taxonomy of EA artifacts
 
 \paragraph*{FEA: Concepts supporting centralized organizations}
 \subparagraph*{EA Description}
-Through the use of a common set of \textit{reference models}, FEA prescribes standards that are to be followed throughout the organization. This limits the flexibility that the individual organizational units have and makes this framework suitable for bureaucratic organizations with a high level of standardization of its processes.
+Through the use of a common set of \textit{reference models}, FEA prescribes standards that are to be followed throughout the organization. This vertical coordination limits the flexibility that the individual organizational units have and makes this framework suitable for bureaucratic organizations with a high level of standardization in its processes.
 
-In FEA, however, individual organizational units have the freedom to develop their own architecture as long as it fits in to the set standards. This supports some level of decentralization and suits to organizations with federal structure, where individual units have input into decisions. 
+In FEA, however, individual organizational units have the freedom to develop their own architecture as long as it fits in to the set standards. This lateral coordination supports some level of decentralization and is suitable for organizations with federal structure, where individual units have input into decisions. 
 
 \subparagraph*{EA Method and EA Engine}
 
-Segment architecture development is defined by FEA as a collaborative approach conducted by an integrated project team (IPT) comprising business subject matter experts, enterprise architects and technical subject matter experts.  FEA defines a set of segment architecture stakeholders and their roles (Table 2-2 in the document \cite{FEA_PMO2007} ) in segment architecture development.   For example, the role of senior management is defined to set the agency strategic goals; chief architect and EA team are appointed to supervise the architecture development process, coordinate the activities of other stakeholders and communicate and share the information between segments when needed; IPT activities and meetings are coordinated and managed by a Program Manager. The Program Manager should monitor progress, evaluate segment architecture completion and demonstrate results. These roles naturally line up with the centralized to federal organization of IT (Fig.\ref{fig:taxonomy} ).
-
-According to FEA, ``Stakeholder commitment must be attained to support each step in this [development] process..''~\cite{FEA_PMO2007}.
+Segment architecture development is defined by FEA as a collaborative approach conducted by an integrated project team (IPT) comprising business subject matter experts, enterprise architects and technical subject matter experts.  FEA defines a set of segment architecture stakeholders and their roles (Table 2-2 in the document \cite{FEA_PMO2007}) whose ``commitment must be attained to support each step in this [development] process.''~\cite{FEA_PMO2007}.   For example, the role of senior management is defined to set the agency strategic goals; chief architect and EA team are appointed to supervise the architecture development process, coordinate the activities of other stakeholders and communicate and share the information between segments when needed; IPT activities and meetings are coordinated and managed by a Program Manager. The Program Manager should monitor progress, evaluate segment architecture completion and demonstrate results. These roles naturally line up with the centralized to federal organization of IT (Fig.\ref{fig:taxonomy}).
  
-The mechanism for integrating the segment architectures under the roof of the corporate architecture is  assured by specific governance and management processes, which are, tough implying different stakeholders, remain centralized. 
+The mechanism for integrating the segment architectures under the roof of the corporate architecture is  assured by specific governance and management processes which, are though implying different stakeholders, remain centralized. 
 
-All steps of segment architecture development (Fig. \ref{fig:FEA_segmentDev} ) involve/supervised by the Program manager and/or chief architect or Capital Planning and Investment Control (CPIC) lead, pointing on centralized management and budgeting.
+All steps of segment architecture development (Fig. \ref{fig:FEA_segmentDev}) involve/supervised by the Program manager and/or chief architect or Capital Planning and Investment Control (CPIC) lead, pointing on centralized management and budgeting.
 
 Transition strategy is defined for the agency level though it is assessed on the global level. Governance-wide collaboration and reuse based on standards is outlined by FEA as an important part of RA transition strategy.
 
@@ -233,9 +170,9 @@ The resulting segment architecture is positioned by FEA as a shared vision for b
 
 The development of \textit{segment architectures} is described as a collaborative process between EA architects and other stakeholders. The accent is placed on the ``reconciliation'' of the segment architecture with an agency architecture and cross-agency initiative, emphasizing the importance of  cross-agency collaboration, common opportunities and initiatives.
 
-Architectural analysis and architectural definition steps of segment architecture development (Fig. \ref{fig:FEA_segmentDev} ) involve business owners at the agency level who define business and information management requirements for the segment. This allows to ensure the local, agency-level interests within a corporation. 
+Architectural analysis and architectural definition steps of segment architecture development (Fig. \ref{fig:FEA_segmentDev}) involve business owners at the agency level who define business and information management requirements for the segment. This allows to ensure the local, agency-level interests within a corporation. 
 
-FEA is targeting the groups of independent federal agencies with an objective to increase their inter-operability and quality of service they are offering for citizens. Among three EA methodologies considered in our study, FEA is the only one recognizing the need of inter- and intra-agency cooperation and communication. Nevertheless, many of the concepts on which the EA method and EA engine of FEA are grounded remain strongly centralized. Again, this supports our initial claim.
+FEA is targeting the groups of independent federal agencies with an objective to increase their interoperability and quality of service they are offering for citizens. Among three EA frameworks considered in our study, FEA is the only one recognizing the need of inter- and intra-agency cooperation and communication. Nevertheless, many of the concepts on which the EA method and EA engine of FEA are grounded remain strongly centralized. Again, this supports our initial claim.
 
 \begin{table}
 \caption{Existing and Prospective support of Progressive Decentralization by EA frameworks}
@@ -301,3 +238,82 @@ DSV has decent/federated structure, needs supporting EA
 % **********************************************************************
 
 \subsubsection*{Find root causes}
+
+
+
+
+%
+%
+%
+% RANDOM NOTES
+%
+%
+
+%%%% applegate
+%%%% In fact, the need to be responsive led to even more decentralized decision making.
+%%%%Today there is
+%%%%a third option: technology-driven control systems ,
+%%%%that support the flexibility and responsiveness of a
+%%%%decentralized organization as well as the integration
+%%%%and control of a centralized organization.
+%%%
+%%%%At the same time, the business environment is
+%%%%changing ever faster, and organizations must be more
+%%%%responsive to it. Yet certain facts of life restrain them
+%%%%from doing so. Companies want to be more flexible,
+%%%%yet job descriptions, compensation schemes, and
+%%%%control mechanisms are rigid. They want to use their
+%%%%resources effectively, yet it's not always clear who
+%%%%can contribute most to a project, especially among
+%%%%people in different functional areas. They want to be
+%%%%productive, but every time an employee goes to another
+%%%%company, a little bit of corporate history and
+%%%%experience walks out the door.
+%%%%
+%%%%With the help of technology; managers will be able
+%%%%to overcome these problems and make their organizations
+%%%%far more responsive than they are today. We
+%%%%can look forward, in fact, to an era in which managers
+%%%%will do the shaping. Large organization or small, centralized
+%%%%or not- business leaders will have options
+%%%%they've never had before. The technology will be
+%%%%there to tum the vision into reality and to change it as
+%%%%circumstances evolve. With that in mind, making a
+%%%%next round of predictions and waiting to see if they
+%%%%come true seems too passive. It makes more sense to
+%%%%begin thinking about the kind of organization we
+%%%%want and taking the steps necessary to prepare for it
+%%%
+%%%%In the cluster organization, groups of people will
+%%%%work together to solve business problems or define a
+%%%%process and will then disband when the job is done.
+%%%%Team members may be geographically dispersed and
+%%%%unacquainted with each other, but information and
+%%%%communication systems will enable those with
+%%%%complementary skills to work together.
+%%%
+%%%%In the network organization,
+%%%%rigid hierarchies are replaced by formal !
+%%%%and informal communication networks that connect
+%%%%all parts of the company. In the adhocracy, a set of
+%%%%project-oriented work groups replace the hierarchy.
+%%%%Both of these forms are well known for their flexibility
+%%%%and adaptiveness. The Manned Space Flight Center
+%%%%of NASA, an example of an adhocracy, changed its
+%%%%organization structure 17 times in the first 8 years of
+%%%%its existence.
+%%%%
+%%%%In what will be an even faster changing world than
+%%%%the one we now know, businesses of all sizes will
+%%%%need the ability to adapt to the dynamics of the external
+%%%%environment. Automated information and communication
+%%%%networks will support the sharing of
+%%%%information throughout a large, widely dispersed,
+%%%%complex company. The systems will form the organization's
+%%%%infrastructure and change the role of formal
+%%%%reporting procedures.
+%%%%
+%%%%Even in large corporations,
+%%%%each individual will be able to communicate with
+%%%%any other-just as if he or she worked in a small
+%%%%company
