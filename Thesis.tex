@@ -82,7 +82,13 @@
 \fi % Used for figures
 
 % need to use dvipdfm (current build order latex->bibtex->latex->latex->dvipdfm)
-\usepackage{graphicx}
+%\usepackage{graphicx}
+%\graphicspath{{Figures/}}
+%\DeclareGraphicsExtensions{.eps}
+%\DeclareGraphicsExtensions{.pdf}
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update}
 \graphicspath{{Figures/}}
 \DeclareGraphicsExtensions{.eps}
 

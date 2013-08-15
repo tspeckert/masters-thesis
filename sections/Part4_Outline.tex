@@ -1,12 +1,15 @@
 %6.4 Guidelines for Outline Artefact and Define Requirements
+%
 %- Specify what artefact to build! Specify the artefact type (construct,
 %model, method, instantiation) and its general characteristics.
-%Formulate each requirement clearly! Describe each requirement
+%
+%- Formulate each requirement clearly! Describe each requirement
 %in a precise, concise and easily understandable way.
 %
 %- justify each requirement! For each requirement, explain why
 %it is needed and relate it to the problem.
-%Be realistic but also original! Ensure that it is realistic to develop
+%
+%- Be realistic but also original! Ensure that it is realistic to develop
 %an artefact fulfilling the requirements but also try to be
 %original.
 %
@@ -14,24 +17,27 @@
 %and the stakeholders that have contributed to defining
 %the requirements.
 %
-%Describe how you have defined the requirements! Explain
+%- Describe how you have defined the requirements! Explain
 %what you have done to define the requirements, in particular
 %how you have reviewed the stakeholders and research literature.
 %
 
 \subsection{Iteration 1}
 
+Not performed. 
+
+%TODO Update method to match. Not doing 2 iterations here. Decide on which part of EA we do here. 
+\subsection{Iteration 2}
+
 \subsubsection*{Outline Artifact}
 
-As identified in Section \ref{sec:exproblem}, an important property of a decentralized business environment that needs to be supported by EA is horizontal coordination. However, current EA frameworks primarily support vertical coordination in their governance styles, as identified in Section \ref{sec:exproblem} and Table \ref{table:summary}. Consequently, a possible solution to the problem of decentralization in EA could be \textit{model} of an EA governance framework supporting decentralization. 
+A key issue identified in the case is with decision making, where a mismatch exists between their integration- and centralization-focused architecture and an organizational structure with some highly decentralized aspects. This mismatch leads to problems in the ongoing success of the university's current architecture -- which is a problem addressed by the EA engine. Furthermore, as this issue lies in how decisions are made and enforced (i.e. the decision to have university-wide integration through use of a common system that cannot be enforced in practice), a governance framework which resolves these mismatches shall be developed. 
+
+As identified in Section \ref{sec:exproblem}, an important property of a decentralized business environment that needs to be supported by EA is horizontal coordination. However, current EA frameworks primarily support vertical coordination in their governance styles, as identified in Section \ref{sec:exproblem} and Table \ref{table:summary}. Consequently, a different approach to EA governance is necessary for decentralized environments.
+
+This thesis project will build a \textit{prescriptive model} to address this issue of governance in EA. This model will outline the framework and basic principles of an EA governance model supporting decentralization in order to provide a basis  for its practical application. 
 
 %maybe not model, maybe something else
-
-
-
-%TODO since we're deciding on artifact here, need to reflect on that in method (e.g. selecting based on case study)
-
-
 
 %For example, if IT systems
 %need to be integrated to make a process more efficient, a solution
@@ -41,7 +47,14 @@ As identified in Section \ref{sec:exproblem}, an important property of a decentr
 %on an overview level.
 
 %
-%construct, a model, a method or an instantiation.
+%model or method
+%
+%However, models can also be used to describe
+%potential solutions to practical problems, e.g. a drawing for a new
+%type of vehicle or a proposal for an architecture of a mobile operating
+%system. Such prescriptive models work as descriptions of possible
+%future solutions and help to build artefacts that can solve practical
+%problems.
 %
 %Methods express prescriptive knowledge by defining guidelines
 %and processes for how to solve problems and achieve goals. In particular,
@@ -49,23 +62,6 @@ As identified in Section \ref{sec:exproblem}, an important property of a decentr
 %highly formalized like algorithms, but they can also be informal such
 %as rules of thumb or best practices. Some examples are methods for
 %database design, change management initiatives, or web service development.
-%
-%Models are used to depict or represent other objects. A model can
-%represent an existing situation, which can be used for describing and
-%analyzing problem situations. Such a descriptive model may work as a
-%pedagogical tool for representing a current situation and explaining
-%why it is challenging. However, models can also be used to describe
-%potential solutions to practical problems, e.g. a drawing for a new
-%type of vehicle or a proposal for an architecture of a mobile operating
-%system. Such prescriptive models work as descriptions of possible
-%future solutions and help to build artefacts that can solve practical
-%problems. There are also predictive models that can be used to forecast
-%the behavior of objects and systems. Thus, models can express
-%descriptive as well as predictive and prescriptive knowledge. In design
-%science, the focus is on prescriptive models. Typical examples
-%are business process models, systems architectures, domain ontologies,
-%and user models.
-
 
 
 \subsubsection*{Define Requirements}
@@ -85,32 +81,32 @@ The requirements for the artifact are outlined in Table \ref{table:requirements}
 %
 \hline
 %
-\textbf{The model shall support lateral coordination} & \\
+\textbf{1 The model shall support lateral coordination} & \\
 %From Table \ref{org_characteristics} \\
 %
 %\hline
 %
-The model shall support decentralized authority structures & 
+1.1 The model shall support decentralized authority structures & 
 \cite{Weill2004,pearlson2009,robbins1997,Camarinha-Matos2005} \\
  %
 %\hline
 %
-The model shall support fluid roles &
-\cite{valveHandbook} \\
+%1.2 The model shall support fluid roles &
+%\cite{valveHandbook} \\
 %
 %\hline
 %
-The model shall support heterogeneous goals & 
+1.3 The model shall support heterogeneous goals & 
 \cite{Camarinha-Matos2005} \\
 %
-%\hline
+%\hline  
 %
-The model shall support conflict resolution of conflicting goals  & 
-Implied from the previous requirement \\
+%The model shall support conflict resolution of conflicting goals  & 
+%Implied from the previous requirement \\
 %
 \hline
 %
-\textbf{The model shall support Governance activities}  & 
+\textbf{The model shall support governance activities}  & 
 General characteristics and purposes of governance in FEA \cite[Sec. 2]{FEA_PMO2007} and TOGAF \cite[Ch. 50]{togaf9.1} \\
 %
 %%\hline
@@ -120,24 +116,20 @@ General characteristics and purposes of governance in FEA \cite[Sec. 2]{FEA_PMO2
 %%%
 %\hline
 %
-The model shall ensure interoperability between architectures  & 
+The model shall address architecture interoperability issues  & 
 TOGAF and FEA use standards and principle to ensure interoperability \\
 %
 %\hline
 %
-The model shall support overseeing change management processes & 
- \\
-%
-%\hline
 %
 The model shall support approving architectural artifacts for implementation  & 
  \\
 %
 %\hline
 %
-The model shall support overseeing performance management processes & 
- \\
-%
+%The model shall support overseeing performance management processes & 
+% \\
+%%
 %%\hline
 %%%
 %%The model shall support the setting of architecture strategy (?) & 
@@ -200,61 +192,5 @@ The model shall support accountability &
 % **********************************************************************
 % **********************************************************************
 
-\subsection{Iteration 2}
 
-\subsubsection*{Outline Artifact}
-
-
-
-\subsubsection*{Define Requirements}
-
-In addition to the requirements in Table \ref{table:requirements}, the following additional requirements for the case are:
-\begin{itemize}
-
-
-\item Supportive of legal directives/decision rights that remain centralized
-
-\item Supportive of centralized budgeting (I dunno)
-
-\item Supportive of decentralized components (research groups, PHD students)
- 
-
-\item Supportive quality check system (though SU doesn't really use it...)
-
- 
-\item SU IT and DSV IT being separate, but still working together (eg. domain, DIVA/Daisy)
-
-\item IT projects run by IT (sometimes approval from higher up for expensive ones)
-
-\item The EA framework must support independent IT at DSV and at SU as well as their collaboration
-
-\item Supportive of centres
-
-\item Board (or replace?)
-
-\item Advisory group
-
-\item Performance measures
-
-\item Research projects are self-managed (some economic controls exist)
-
-\item Administrative systems (eg. HR and budget) for whole University are managed by Board
-
-\item ROI not currently done
-
-\item DSV does things because they think they are are interesting (PROTECT THIS)
-
-\item Cooperation with outside institutions managed by the department  itself, no SU involvement
-
-\item Current change structure for studies (come from anywhere -> Director investigates feasibility -> group (made up of relevant ppl) sets up plan) (For bologna, need for change was decided by LAW, but how to make the changes was done collaboratively by profs)
-
-\item New programs require approval from faculty
-
-\item Evaluation is generally informal, except for state level requirements
-
-\item Funding for courses based around enrollment 
-
-\item DSV pays for central systems but does not have to actually use them
-
-\end{itemize}
  
