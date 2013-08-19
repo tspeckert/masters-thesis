@@ -39,7 +39,6 @@ The problem of EA frameworks not being ideally suited for organizations on the H
 
 Organizations on the High Centralization end of the continuum fail to adapt to dynamic environments due to their inertia in decision making and lack of agility \cite{fulk1995,pearlson2009}. As a result, organizations are moving towards High Decentralization, with organizational structures such as Collaborative Networks \cite{Camarinha-Matos2005} and Flat, where organizational subunits and individuals are being given an increasing amount of autonomy and control. Decentralized structures support transparent or dynamically changing boundaries, agile processes, interactions aligned in real-time with changing business conditions, virtual collaborations; all of which are technology-enabled capabilities~\cite{applegate1988,fulk1995}.
 
-
 Decentralization means a significant change from the traditional management and operation styles of an organization and requires major changes in organizational processes. It transforms the role of authority and makes relationships inside and between different subunits much more complex. Planning and governance in different functional areas, including IT, is no longer centrally ensured. As a consequence, collaboration and information sharing between subunits gain extreme importance. This is evident in the challenges of decentralized organizations outlined in~\cite{caruso2008boundaries}.  
 
 %TODO add more sources re: importance of communication/information sharing
@@ -223,28 +222,68 @@ Peer production for relevance/accreditation (e.g. decision making in budgeting, 
 % **********************************************************************
 
 
+
+
 \subsection{Iteration 2}
 
 \subsubsection*{Define Precisely}
 
-The case organization has many of the properties of a decentralized organization and therefore needs an EA supportive of this decentralization. Currently, this is not the case as their implicit EA is not fully supportive of this decentralization. 
+%The first sub-activity, the problem in the case is precisely defined
+
+The case organization has many of the properties of a decentralized organization and therefore needs an EA supportive of this decentralization. Currently, this is not the case as their implicit EA remains highly centralized and is not fully supportive of this decentralization. 
 
 
 \subsubsection*{Motivate problem}
+%In the second sub-activity, the problem is motivated through the use of the case
+%study. To this end, specific issues in the case arising from their implicit EA and their
+%organizational structure are identified.
 
-``Have decision making as close to the operational level as possible''
+%one \footnote{From the interview with the department vice-head\label{fn:interviewHead}} y
+%two \footnote{From the interview with the head of PhD studies\label{fn:interviewPHD}}
+%three \footnote{From the interview with the head of undergrad studies\label{fn:interviewUndergrad}}
+%four \footnote{From the interview with the head of IT\label{fn:interviewIT}} y
+%five \footnote{From the document study\label{fn:document}} y
+%one2 \footref{fn:interviewHead} y
+%two2 \footref{fn:interviewPHD}
+%three2 \footref{fn:interviewUndergrad}
+%four2 \footref{fn:interviewIT} y
+%five2 \footref{fn:document} y
 
-Some centralized aspects; i.e. decision making rights work their way down from the top from the board, so many rights still reside at the top. 
-
-DSV IT is responsible for own IT, SU IT is not able to tell them what to do. 
-
-Cooperate because they f
+This mismatch between centralized aspects and decentralized aspects has resulted in wasted financial resources. For example, consider a situation outlined in the interview with the vice-head of the department which concerned the acquisition of a software system with the objective of integrated facility management across departments. The departments were not involved in the decision making process and a subset of them consequently refused to shut down their local systems and switch to the global one. As a consequence, the strategic initiative for integration failed; the departments were able to protect their interests (local systems tailored for their needs), but were still charged for the acquired system they never used. This example demonstrates one of the problems caused when there is a mismatch between architecture principles (tendency towards integration), architecture engine (the process of prioritizing, evaluating and eventually deciding on the global system to adopt) and organizational structure.
 
 \subsubsection*{Find root causes}
 
-Mismatch between Centralized aspects and Decentralized aspects. For example:
+The root causes of this mismatch will be highlighted by looking for conflicts in the university's architecture principles and in characteristics their EA engine and supporting organizational structure. 
 
-As an example, consider a public organization acquiring a software system with the objective of integrated facility management across divisions. Divisions were not involved in the decision making process (due to centralized strategic planning) and eventually refused to shut down their local systems and switch to the global one (due to decentralized IT management). As a consequence, the strategic initiative for integration failed; the divisions protected their interests (local systems tailored for their needs), but were still charged for the acquired system they never used (due to centralized budgeting). This example demonstrates a mismatch between the architecture principles (tendency towards integration), architecture engine (the process of prioritizing, evaluating and eventually deciding on the global system to adopt) and the organizational structure that inherits some centralized mechanisms while being strongly decentralized.
+Two architecture principles the university seems to operate under came to light during the course of the interviews and document study:
+
+\begin{enumerate}
+\item Decision making rights are pushed down as close to the operational level as possible\footnote{From the document study\label{fn:document}}.
+\item Integrate systems across the university\footnote{From the interview with the department vice-head\label{fn:interviewHead}}\footnote{From the interview with the head of IT\label{fn:interviewIT}}.
+\end{enumerate}
+
+The following characteristics of the university's EA engine and supporting organizational structure were uncovered: 
+
+\begin{itemize}
+\item The allocation of decision rights is done in a centralized manner. All the rights come from the government and are distributed down through the various levels of the university\footref{fn:interviewHead}\footref{fn:document}, as depicted in Figure~\ref{fig:dsv_decisionRights}.
+\item The university maintains centralized control over budgeting\footref{fn:interviewHead}.
+\item Strategic planning is centralized; the university board sets the overall strategy for the university and the departments set their own strategy which must be approved by the university\footref{fn:interviewHead}\footref{fn:document}.
+\item IT is managed is separately at the university and department levels. IT at the department is completely decentralized from the university-level IT, i.e. the university IT has no control over the department IT \footref{fn:interviewIT}.  
+\item Cooperation and coordination between the department IT and the rest of the university is completely voluntary and is undergone for mutual benefit \footref{fn:interviewIT}. 
+\item The department IT controls its own projects, however approval from the department head is needed for expensive ones \footref{fn:interviewIT}\footref{fn:interviewHead}. 
+\item There are no metrics used for measuring IT project success \footref{fn:interviewIT}\footref{fn:interviewHead}. 
+\item Centres (separate groups within the department) are responsible for their own IT, though they may use the central IT systems as well\footref{fn:interviewHead}.  %TODO not sure if relevant
+\end{itemize}
+
+\begin{figure}
+\includegraphics[scale=0.5]{dsv_decisionRights}
+\caption{Allocation of decision rights in the university}
+\label{fig:dsv_decisionRights}
+\end{figure}
+
+These principles and characteristics include highly centralized as well as highly decentralized aspects. From the EA engine, strategic planning, allocation of decision rights, and budgeting are centralized, which support the principle of integrated systems (which is also centralized). However, in practice, decision rights are actually pushed down to the operational level (the first architecture principle) which results in completely decentralized IT management: the university IT and the departmental IT are completely separate with the university IT exerting no control of the department. This is in conflict with the principal of integration as the university is not able to enforce integration, meaning, the department can decide to go against integration if it is at conflict with their own interests. 
+
+%org structure that inherits some centralized mechanisms while being strongly decentralized
 
 % notes previously from outline
 %\begin{itemize}
@@ -297,14 +336,15 @@ As an example, consider a public organization acquiring a software system with t
 %\end{itemize}
 
 
+\paragraph*{Comparison}
 
-%
+
 %
 %
 % RANDOM NOTES
 %
 %
-
+%
 %%%% applegate
 %%%% In fact, the need to be responsive led to even more decentralized decision making.
 %%%%Today there is
