@@ -65,12 +65,24 @@
 \usepackage{mathptmx} % Default font for dissertations is Times.
 %\usepackage{fourier} % If mathematics don't display well using
                       % Times, then use Fourier.
-\usepackage{helvet}  
+\usepackage{helvet}
+
+\usepackage{caption} % Used for
+                                   % captionstyling. Caption
+                                   % heading should be in italics
+                                   % and one-line captions should
+                                   % not be centered.
+                                   
+
 
 \usepackage{ThesisSU} % This package is specific for theses
                       % written at Stockholm University. 
                       % Modifications to the classfile and the 
                       % document can be found here.
+                      
+%customize captions
+\captionsetup{font=small,labelfont=it,singlelinecheck=off}
+\captionsetup[longtable]{justification=centering}
                       
 \usepackage{float}
 \restylefloat{table}
@@ -122,7 +134,11 @@ pdfpagelabels]{hyperref} % Use this package to obtain links in the
 %...
 %...\footref{fn:repeat}
 
-  
+\usepackage{longtable} %for long tables ...duh
+%Customizing longtable captions... dunno:
+%
+
+
 
 % Bibliographic information
 \input{sections/BiblioInfo.tex} % This file should be edited by the author.
@@ -219,9 +235,13 @@ pdfpagelabels]{hyperref} % Use this package to obtain links in the
     \label{sec:conclusions}
     \input{sections/Part5_Conclusions}
     
-    \section{Discussion and Future Work}
+    \section{Discussion}
     \label{sec:discussion}
     \input{sections/Part5_Discussion}
+    
+    \section{Future Work}
+    \label{sec:future}
+    \input{sections/Part5_Future}
 
     
 

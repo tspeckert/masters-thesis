@@ -221,12 +221,13 @@
 
 % Changes to table environment      
 \renewenvironment{table}
-               {\captionsetup{belowskip=3pt, aboveskip=6pt, labelfont=it, textfont=rm}
-				\captionsetup{font=small}
+               %{\captionsetup{belowskip=3pt, aboveskip=6pt, labelfont=it, textfont=rm}
+               {\captionsetup{belowskip=3pt, aboveskip=6pt, labelfont=bf, textfont=bf}
+				\captionsetup{font=bf}
 				\small
 				\@float{table}}
                {\end@float}
-
+%\renewenvironment{longtable}{\captionsetup{font=bf}}
 % Changes to figure environment                 
 \renewenvironment{figure}
                {\captionsetup{belowskip=6pt, aboveskip=3pt, labelfont=it, textfont=rm}
@@ -273,7 +274,7 @@
 % Setting the default font
 \AtBeginDocument{\timesTwelve}
 
-\usepackage[it,nooneline]{caption} % Used for
+%\usepackage[it,nooneline]{caption} % Used for
                                    % captionstyling. Caption
                                    % heading should be in italics
                                    % and one-line captions should
