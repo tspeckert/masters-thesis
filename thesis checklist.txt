@@ -1,0 +1,32 @@
+clarified RQs 
+clarified layout
+removed EI -> not sure how ot make it more related (it isn't)
+short paper in ref (there a better way?)
+clarified method
+removed sentence about not doing an evaluation (this was from before I did the argumentative evaluation and I forgot to delete it)
+short introduction to results. Is more needed? (though Im not sure what else to put - I simply follow my method)
+Clarifid that Figure 4.1 was developed as part of this thesis work
+Clarified 'define precisely' part of the problem
+Clarified the caption of Table 4.1 (I think the reviewer just meant that these properties are exhibited by DSV and DSV is therefore centralized)
+Clarified decion rights, figure 4.2
+clarified evaluation
+added case motivation to method
+calrified outline
+Clarified the reasons for argumentative evaluation
+Made centralized advisory group more centralized. --> no voice no more
+Mixed makes more sense for advisory group. While there is no direct "power" or authority there, influence is still power after all
+
+
+
+todo:
+update diagram of outline (method) --> maybe add more about outline in method (see jz feedback)
+In Method: check diagrams for "prototype" and change to match text; e.g. Demonstration output
+weird uppercasing in my self references
+
+
+
+thoughts
+not sure how I can link table to artifact better; e.g. I am currently saying which guideline I am using
+expand on guidelines? instead of just keywords --> but I do have a description of them...
+Reviewer didn't liek the word framework; there a better word?
+could enlargen some diagrams
