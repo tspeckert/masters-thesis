@@ -22,6 +22,7 @@ todo:
 update diagram of outline (method) --> maybe add more about outline in method (see jz feedback)
 In Method: check diagrams for "prototype" and change to match text; e.g. Demonstration output
 weird uppercasing in my self references
+calling what I do making architectures 
 
 
 
