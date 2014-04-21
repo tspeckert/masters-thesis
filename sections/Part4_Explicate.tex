@@ -8,7 +8,7 @@ To precisely define our problem, we first need to define a taxonomy of organizat
 
 For the purpose of this thesis work, three types of organizational structure in IT are considered along a centralization continuum: \textit{Centralized IT}, where all IT related decisions are made in a centralized manner by the top-level executives, \textit{Decentralized IT}, where each organizational subunit manages its IT in completely autonomous and independent manner,  and \textit{Federal IT} that can be seen as a combination of central IT management and IT management in the subunits. Here a primary task  would be to maintain standards for the entire enterprise while supporting flexibility on the subunit level. The business units would still have ownership of many of their own systems, allowing them to implement them as they deem best. 
 
-Figure \ref{fig:taxonomy} maps the organizational forms presented in Section \ref{sec:organizations} to the continuum, ranging them from highly centralized (e.g. bureaucratic) to decentralized (e.g. virtual organizations).
+A mapping of the organizational forms presented in Section \ref{sec:organizations to the continuum was developed as part of this thesis work (presented in Figure~\ref{fig:taxonomy}), organizing them from highly centralized (e.g. bureaucratic) to decentralized (e.g. virtual organizations).
 
 \begin{figure}
 \centering
@@ -16,8 +16,6 @@ Figure \ref{fig:taxonomy} maps the organizational forms presented in Section \re
 \caption{Organizational taxonomy: A Continuum From Centralized to Decentralized}
 \label{fig:taxonomy}
 \end{figure}
-
-%TODO reflect in method
 
 \paragraph*{Role of EA}
 
@@ -27,25 +25,15 @@ As detailed in Section \ref{sec:ea}, Enterprise Architecture is a discipline tha
 
 Many modern organizations are adopting significantly different organizational structures in comparison with traditional, centralized organizations. This is often characterized by a shift towards the High Decentralization end of the organizational taxonomy (Figure \ref{fig:taxonomy}) and increasing demand in flexibility and agility of their IT. Consequently, there is a need to support this difference in structure, communication patterns, and governance that is adopted by these organizations.
 
-%The EA frameworks of TOGAF, Zachman and FEA are primarily supportive of organizations with an structural form on the High Centralization end of the centralization continuum (Figure \ref{fig:taxonomy}). This is a problem for organizations on the High Decentralization end of the spectrum, who will likely encounter issues if they implement EA as it is currently described in TOGAF, Zachman, and FEA. Therefore, the addition of specific guidelines to these frameworks that are supportive of decentralization would improve their support of decentralized organizations.
-%
-%The EA frameworks of TOGAF, Zachman and FEA are primarily supportive of organizations with an structural form on the High Centralization end of the centralization continuum (Figure \ref{fig:taxonomy}). This is a problem for organizations on the High Decentralization end of the spectrum, who will likely encounter issues if they implement EA as it is currently described in TOGAF, Zachman, and FEA. Therefore, the addition of specific guidelines to these frameworks that are supportive of decentralization would improve their support of decentralized organizations. 
+The problem is that the EA frameworks of TOGAF, Zachman and FEA are primarily supportive of organizations with an structural form on the High Centralization end of the centralization continuum (Figure \ref{fig:taxonomy}). This is a problem for organizations on the High Decentralization end of the spectrum, who will likely encounter issues if they implement EA as it is currently described in TOGAF, Zachman, and FEA. Therefore, the addition of specific guidelines to these frameworks that are supportive of decentralization would improve their support of decentralized organizations.
 
-
-% **********************************************************************
-% **********************************************************************
-% **********************************************************************
-
-\subsubsection{Motivate problem} %WHY PROBLEM IN IMPORTANT/RELEVANT
-%TODO reflect in method
+\subsubsection{Motivate problem} 
 
 The problem of EA frameworks not being ideally suited for organizations on the High Decentralization end of the spectrum is important because: 1) many organizations adopt a decentralized structure \cite{acemoglu2007technology,fulk1995}, and 2) like centralized organizations, decentralized organizations can potentially benefit from the practice of EA.
 
 Organizations on the High Centralization end of the continuum fail to adapt to dynamic environments due to their inertia in decision making and lack of agility \cite{fulk1995,pearlson2009}. As a result, some organizations are moving towards High Decentralization, with organizational structures such as Collaborative Networks \cite{Camarinha-Matos2005} and Flat, where organizational subunits and individuals are being given an increasing amount of autonomy and control. Decentralized structures support transparent or dynamically changing boundaries, agile processes, interactions aligned in real-time with changing business conditions, virtual collaborations; all of which are technology-enabled capabilities~\cite{applegate1988,fulk1995}.
 
 Decentralization means a significant change from the traditional management and operation styles of an organization and requires major changes in organizational processes. It transforms the role of authority and makes relationships inside and between different subunits much more complex. Planning and governance in different functional areas, including IT, is no longer centrally ensured. As a consequence, collaboration and information sharing between subunits gain extreme importance. This is evident in the challenges of decentralized organizations outlined in~\cite{caruso2008boundaries}.  
-
-%TODO add more sources re: importance of communication/information sharing
 
 While technology serves as an important catalyst for organizational transformations, it is important to utilize the right IT resources in a manner that is supportive of the organization. To accomplish this in decentralized organizations, novel EA processes, principles and concepts are needed to both handle the IT resources and to foster business/ICT co-evolution in decentralized environments. The de-facto EA frameworks rely on organizational properties that are becoming obsolete with progressive decentralization.  Due to this, implementation of these frameworks in decentralized organization becomes difficult and inefficient and the role of EA as a driver for IT transformations is becoming compromised. In order to deal with progressive decentralization, some changes or additions to these EA frameworks are necessary in order to improve their support for decentralization.
 
@@ -64,7 +52,7 @@ The root cause of the discrepancy between current EA frameworks and decentraliza
 A number of key properties of organizations and how they can differ between centralized and decentralized organizations have been identified.  These properties are detailed in Table \ref{table:org_characteristics}.
 
 \begin{table}
-\caption{Organizational Properties}
+\caption{Organizational properties identified in the literature study}
 \label{table:org_characteristics}
 %%\begin{tabular}{l p{0.28\textwidth}}
 \begin{tabular}{ | p{0.25\textwidth} | p{0.35\textwidth}| p{0.35\textwidth} |}
@@ -97,8 +85,6 @@ Informal communication lines~\cite{pearlson2009}; flexible, constantly changing 
 %
 \end{tabular}
 \end{table}
-
-
 
 \paragraph*{TOGAF: Concepts supporting centralized organizations}
 
@@ -196,8 +182,7 @@ EA component: &
 \textbf{EA Method:} & 
 Approval process based on hierarchy; architecture development is coordinated, supervised and evaluated by well-defined roles in a company (e.g. senior managers define strategic goals); EA teams coordinate architectural work and communicate results; results are controlled and evaluated centrally - by program manager) &
 Federated architectures; possibility to adapt ADM for a specific organization; architecture development process involves multiple stakeholders & 
-peer production principles for creation and evaluation of EA artifacts; P2P trust management replacing approval mechanism\\
-%flexible ADM & peer production; P2P trust management\\
+peer production principles for creation and evaluation of EA artifacts; P2P trust management replacing approval mechanism \\
 %
 \hline
 %
@@ -232,32 +217,16 @@ Peer production for relevance/accreditation (e.g. decision making in budgeting, 
 
 \subsubsection*{Define Precisely}
 
-%The first sub-activity, the problem in the case is precisely defined
-
 The case organization has many of the properties of a decentralized organization and therefore needs an EA supportive of this decentralization. Currently, this is not the case as their implicit EA maintains some highly centralized components and is therefore not fully supportive of this decentralization. 
 
 
 \subsubsection*{Motivate problem}
-%In the second sub-activity, the problem is motivated through the use of the case
-%study. To this end, specific issues in the case arising from their implicit EA and their
-%organizational structure are identified.
-
-%one \footnote{From the interview with the department vice-head\label{fn:interviewHead}} y
-%two \footnote{From the interview with the head of PhD studies\label{fn:interviewPHD}}
-%three \footnote{From the interview with the head of undergrad studies\label{fn:interviewUndergrad}}
-%four \footnote{From the interview with the head of IT\label{fn:interviewIT}} y
-%five \footnote{From the document study\label{fn:document}} y
-%one2 \footref{fn:interviewHead} y
-%two2 \footref{fn:interviewPHD}
-%three2 \footref{fn:interviewUndergrad}
-%four2 \footref{fn:interviewIT} y
-%five2 \footref{fn:document} y
 
 This mismatch between centralized aspects and decentralized aspects has resulted in wasted financial resources. For example, consider a situation outlined in the interview with the vice-head of the department which concerned the acquisition of a software system with the objective of integrated facility management across departments. The departments were not involved in the decision making process and a subset of them consequently refused to shut down their local systems and switch to the global one. As a consequence, the strategic initiative for integration failed; the departments were able to protect their interests (local systems tailored for their needs), but were still charged for the acquired system they never used. This example demonstrates one of the problems caused when there is a mismatch between architecture principles (tendency towards integration), architecture engine (the process of prioritizing, evaluating and eventually deciding on the global system to adopt) and organizational structure.
 
 \subsubsection*{Find root causes}
 
-The root causes of this mismatch will be highlighted by looking for conflicts in the university's architecture principles and in characteristics their EA engine and supporting organizational structure. 
+The root causes of this mismatch will be highlighted by looking for conflicts between the university's architecture principles, and its EA engine and supporting organizational structure. 
 
 Two architecture principles the university seems to operate under came to light during the course of the interviews and document study:
 
@@ -269,14 +238,14 @@ Two architecture principles the university seems to operate under came to light 
 The following characteristics of the university's EA engine and supporting organizational structure were uncovered: 
 
 \begin{itemize}
-\item The allocation of decision rights is done in a centralized manner. All the rights come from the government and are distributed down through the various levels of the university\footref{fn:interviewHead}\footref{fn:document}, as depicted in Figure~\ref{fig:dsv_decisionRights}.
+\item The allocation of decision rights is done in a centralized manner. All the rights come from the government and are distributed down through the various levels of the university\footref{fn:interviewHead}\footref{fn:document}. The top level, the government, begins with all decision rights. The government then delegates a subset (in this case, almost all of them) of them to the next level, the University Board and the Senior Management Team. This continues with each level keeping some decision rights that were allocated to them and passing on the rest until it reaches the bottom level; that of the staff and teachers/professors of the University. This is shown in Figure~\ref{fig:dsv_decisionRights}, with the green arrows depicting the path that the decision rights allocation follows.
 \item The university maintains centralized control over budgeting\footref{fn:interviewHead}\footnote{From the interview with the head of PhD studies\label{fn:interviewPHD}}.
 \item Strategic planning is centralized; the university board sets the overall strategy for the university and the departments set their own strategy which must be approved by the university\footref{fn:interviewHead}\footref{fn:document}.
 \item IT is managed is separately at the university and department levels. IT at the department is completely decentralized from the university-level IT, i.e. the university IT has no control over the department IT \footref{fn:interviewIT}.  
 \item Cooperation and coordination between the department IT and the rest of the university is completely voluntary and is undergone for mutual benefit \footref{fn:interviewIT}. 
 \item The department IT controls its own projects, however approval from the department head is needed for expensive ones \footref{fn:interviewIT}\footref{fn:interviewHead}. 
 \item There are no metrics used for measuring IT project success \footref{fn:interviewIT}\footref{fn:interviewHead}. 
-\item Centres (separate groups within the department) are responsible for their own IT, though they may use the central IT systems as well\footref{fn:interviewHead}.  %TODO not sure if relevant
+\item Centres (separate groups within the department) are responsible for their own IT, though they may use the central IT systems as well\footref{fn:interviewHead}.
 \end{itemize}
 
 \begin{figure}
