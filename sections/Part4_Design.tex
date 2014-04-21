@@ -6,79 +6,38 @@ The challenge of decentralization is not a new one; other efforts have been able
 
 One such effort is peer-to-peer architecture. According to Saroiu, Gummadi and Gribble, peer-to-peer systems ``...typically lack dedicated, centralized infrastructure, but rather depend on the voluntary participation of peers to contribute resources out of which the infrastructure is constructed. Membership in a peer-to-peer system is ad-hoc and dynamic...''~\cite{saroiu2001measurement}. 
 
-%Multiple parallels can be drawn between the problem decentralization for peer-to-peer systems and the problem of decentralization for EA.
-
 We argue that peer-to-peer is a relevant concept to decentralization in EA for two reasons. First, individuals in highly decentralized organization are able to contribute to the enterprise in a manner that is completely up to them. This is similar to peers in a peer-to-peer system, where the peers participate in a completely voluntary manner. Second, the challenge that peer-to-peer systems overcome is similar to the main challenge faced by decentralized organizations. Saroiu et al. state that the challenge of peer-to-peer systems is to ``to figure out a mechanism and architecture for organizing the peers in such a way so that they can cooperate to provide a useful service to the community of users''~\cite{saroiu2001measurement}. This is similar to the main challenge facing decentralized organizations--a lack of interaction and communication, or in other words, cooperation--which was identified in Section \ref{sec:challenge}. 
 
 With EA being a potential solution to this challenge of decentralization in organizations and the parallels between the domains of peer-to-peer systems and decentralized organizations, we propose that peer-to-peer may be a potential source of principles that could form the basis for evolving current centralization-focused EA frameworks into ones that are supportive of decentralization. This section outlines solutions based on relevant principles from peer-to-peer that have been generated through brainstorming.
-
-%
-% Theory: 
-%
 
 \paragraph*{Peer production}
 
 Benkler defines peer production as ``...production systems that depend on individual action that is self-selected and decentralized, rather than hierarchically assigned''~\cite{benkler2006wealth}. Here, individuals act according to their own will rather than being directed by a central figure. Peer production works on the idea of the individuals willingly coordinating with one another by expressing their own views while understanding the views of others.
 
-%
-%% Examples:
-%
-
 Peer production takes many different forms. One example are user-driven media sites such as Reddit\footnote{~\url{www.reddit.com}} and Slashdot\footnote{~\url{www.slashdot.org}}, which follow a peer-production model for producing ``relevance/accreditation''~\cite{benkler2006wealth} on user-submitted content. On these sites, the users have the ability to vote on the submitted content in order to decide on the content's relevance or credibility. Another example of relevance production are crowdfunding sites such as Kickstarter\footnote{~\url{www.kickstarter.com}} where individuals decide on the funding of user-submitted projects by giving their own money. Peer production is also used to produce content, such as in the case of Wikipedia\footnote{~\url{www.wikipedia.org}}, an online encyclopedia which provides a platform for user-driven content submission and change management of that content.
-
-%
-%% Why Appropriate:
-%
 
 If we view enterprises as being composed of peers (a peer could be individual or an organizational unit), the idea of peer production becomes useful for EA. For example, the EA  Engine of TOGAF relies on an Architecture Board responsible high-level decisions and governance. Instead of a central board responsible for making decisions, a model based on the principle of peer production for relevance/accreditation could be used instead. This would better support decentralization as decision making would then be distributed amongst the peers that make the organization.
 
-%%
-%% Theory: 
-%%
-
 \paragraph*{Trust management in peer-to-peer}
-%
-%% Definition:
-%
+
 Due to the fact that peers in peer-to-peer systems are able to operate in a completely independent manner, there exists the problem of knowing whether or not the contribution made by a peer is trustworthy or not. Consequently, some researchers have proposed various methods for determining trust in a peer-to-peer environment.
-%
-%% Examples:
-%
+
 For example, Aberer and Despotovic~\cite{aberer2001managing} have proposed determining whether a peer is trustworthy or not based on a peers history of interactions with other peers in the system. This assessment is performed by the individual peers, and as such, is appropriate for a peer-to-peer environment.
-%
-%% Why Appropriate:
-%
+
 TOGAF employs the idea of an approval process grounded on the presence of centralized authority. This is to ensure that the presented architectural material is in fact valid for the enterprise. In a decentralized environment, this central authority is not likely to exist. Peer-to-peer trust management may offer a solution here. Instead of being give an explicit stamp of approval, the acceptance of a peer's contribution to EA by other peers can be based on a peer's level of trustworthiness. 
-%
-% 
-%
-%vice division lead \interview1{}, head of PhD studies \interview2{}, head of undergrad studies \interview3{}, and head of IT \interview4{}  
-%...\footnote{Text to repeat\label{fn:repeat}}
-%...
-%...\footref{fn:repeat}
-
-%one \footnote{From the interview with the division vice-lead\label{fn:interviewHead}}
-%two \footnote{From the interview with the head of PhD studies\label{fn:interviewPHD}}
-%three \footnote{From the interview with the head of undergrad studies\label{fn:interviewUndergrad}}
-%four \footnote{From the interview with the head of IT\label{fn:interviewIT}}
-%five \footnote{From the document study\label{fn:document}}
-%one2 \footref{fn:interviewHead}
-%two2 \footref{fn:interviewPHD}
-%three2 \footref{fn:interviewUndergrad}
-%four2 \footref{fn:interviewIT}
-
 
 \subsection{Iteration 2}
 \label{sec:design_iteration2}
 
 \subsubsection*{Search and Select}
-%EA Engine - ensure ongoing success of achitecture
-%A key issue identified in the case is with decision making, where a mismatch exists between their integration- and centralization-focused architecture and an organizational structure with some highly decentralized aspects. This mismatch leads to problems in the ongoing success of the university's current architecture -- which is a problem addressed by the EA engine. Furthermore, as this issue lies in how decisions are made and enforced (i.e. the decision to have university-wide integration through use of a common system that cannot be enforced in practice), a governance framework which resolves these mismatches has been developed. 
-%
-%
+
 As the problem outlined in ``Iteration 2'' Section~\ref{sec:exproblem} relates primarily to the decision making aspect of the university's EA engine, the principle of peer production -- which relates to the governance of a decentralized group of people striving towards a common goal -- will be used to form the basis of the solution artifact.  The principle of trust management in peer-to-peer would be useful in determining whether some produced content (i.e. an EA artifact) is of sufficient quality to be included in the overall architecture, but is not as applicable to the problem of a mismatch between decision-making structures. 
 
-As highlighted in table~\ref{table:summary}, EA frameworks often assume vertical coordination, for example the Architecture Board of TOGAF. Here, some central authority is responsible for the overall decision making with respect to the architecture. This thesis instead proposes a solution artifact made of the three following \textbf{Architecture Principles} for a peer production-based governance framework (part of the EA engine) where decision-making authority is distributed to those that are affected by the outcome of a decision:
+As highlighted in table~\ref{table:summary}, EA frameworks often assume vertical coordination, for example the Architecture Board of TOGAF. Here, some central authority is responsible for the overall decision making with respect to the architecture. This thesis instead proposes a solution artifact that can provide support for an EA that supports the horizontal coordination that is characteristic of decentralized organizations.
+
+\paragraph*{The Solution Artifact}
+
+The solution artifact is composed of three guidelines aimed at providing increased support for decentralization in EA:
 
 \begin{description}
 \item[1. Wilful coordination] \hfill \\ Instead of strict, formal compliance measure, operate under the principle that the architecture requires willful coordination by individual entities. This is based on the idea from peer production that individuals willingly coordinate with one another for the purpose of mutual benefit.
@@ -87,149 +46,3 @@ As highlighted in table~\ref{table:summary}, EA frameworks often assume vertical
 
 \item[3. Peer decision making] \hfill \\ Decision making should be distributed to the affected individuals as opposed to residing with an top-level entity. This can be done by giving everyone the right to vote on a decision. Since it is however not feasible to vote on all decisions, such voting should be reserved more for major decisions. 
 \end{description}
-
-
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Random notes
-%
-%
-%%%Benkler defines peer production as ``...production systems that depend on individual action that is self-selected and decentralized, rather than hierarchically assigned''~\cite{benkler2006wealth}. Here, individuals act according to their own will rather than being directed by a central figure. Peer production works on the idea of the individuals willingly coordinating with one another by expressing their own views while understanding the views of others.
-%%%
-%%%%
-%%%%% Examples:
-%%%%
-%%%
-%%%Peer production takes many different forms. One example are user-driven media sites such as Reddit\footnote{~\url{www.reddit.com}} and Slashdot\footnote{~\url{www.slashdot.org}}, which follow a peer-production model for producing ``relevance/accreditation''~\cite{benkler2006wealth} on user-submitted content. On these sites, the users have the ability to vote on the submitted content in order to decide on the content's relevance or credibility. Another example of relevance production are crowdfunding sites such as Kickstarter\footnote{~\url{www.kickstarter.com}} where individuals decide on the funding of user-submitted projects by giving their own money. Peer production is also used to produce content, such as in the case of Wikipedia\footnote{~\url{www.wikipedia.org}}, an online encyclopedia which provides a platform for user-driven content submission and change management of that content.
-%%%
-%%%%
-%%%%% Why Appropriate:
-%%%%
-%%%
-%%%If we view enterprises as being composed of peers (a peer could be individual or an organizational unit), the idea of peer production becomes useful for EA. For example, the EA  Engine of TOGAF relies on an Architecture Board responsible high-level decisions and governance. Instead of a central board responsible for making decisions, a model based on the principle of peer production for relevance/accreditation could be used instead. This would better support decentralization as decision making would then be distributed amongst the peers that make the organization.
-%
-%
-%TOGAF ACF
-% - board (responsibilities include “[p]roviding the basis for all decision-making with regard to the architectures”,)
-% - a formal architecture compliance process (to “[f]irst and foremost, catch errors in the project architecture early, and thereby reduce the cost and risk of changes required later in the lifecycle”)
-% - the use of architecture contracts
-% - guidelines for architecture governance
-%
-%
-%FEA describes “EA governance and management processes” [4, Sec. 2] to control architecture development. These process are implemented to manage standards, enforce compliance, manage collaboration between agencies, approve architectures for implementation, and manage business and IS requirements for managing EA change.
-%
-%Segment architecture development is controlled by EA governance and management
-%processes across each phase of the Performance Improvement Lifecycle. Governance
-%and management processes are implemented to:
-%• Review segment architecture work product content and format standards to
-%promote reconciliation with the agency EA and relevant cross-agency initiatives;
-%• Validate opportunities for agency-level and cross-agency collaboration and reuse
-%including the implementation of relevant cross-agency initiatives;
-%• Review and approve segment architecture in advance of IT investment and
-%project execution;
-%• Capture segment-level business and information management requirements to
-%update and maintain the agency EA; and
-%• Capture lessons learned to improve the segment architecture process and
-%standard work products.
-%
-%- Clearly describe each component of the artefact! Describe both the functionality and construction of each artefact component.
-%
-%- Justify each component of the artefact! Explain the purpose of each artefact component, in particular which requirement(s) it addresses.
-%
-%- Describe the use of the artefact! Describe how the artefact and its components are intended to be used in its intended practice.
-%
-%- Clarify the originality! Describe in what respects the artefact is different from existing ones with respect to both functionality and construction.
-%
-%- Specify the sources of the artefact design! Describe the literature and the stakeholders that have contributed to components of the artefact and/ or inspired the design of new components. Describe how you have designed and developed the artefact! Explain what you have done to design and develop the artefact, in particular how you have reviewed the stakeholders, existing solutions, and research literature.
-%
-%- Describe how you have designed and developed the artefact! Explain what you have done to design and develop the artefact, in particular how you have reviewed the stakeholders, existing solutions, and research literature.
-%
-%
-%Freedom to do things on own is important
-%
-%important department-wide decisions made collaboratively
-%
-%important decisions on central systems made collaboratively
-%
-%respect legal issues
-%
-%aim to be realistic
-
-%
-%In TOGAF, the concept of an Architecture Repository [CROSS-REFERENCE?] exists as part of the EA Engine in order to manage the storage of all architecture-related information in a central repository throughout the architecture's life cycle. While this has the benefit of making this information easy to retrieve, it is not supportive of a organizational structures on the decentralized end of the spectrum. 
-%
-%Instead of a central repository of EA artifacts, the Architecture Repository could be treated as a distributed resource that is developed and stored in a completely distributed manner, as is done with Git or other distributed revision control systems. In this way, the decentralized EA contributors could submit their own updates to EA without having to go through a bureaucratic process (e.g. gaining approval) to have their updates included in the overall EA. 
-%
-%This could also be a relevant principle for FEA in supporting further decentralization in that individual organizational units could contribute to the overall distributed resource of EA as opposed to developing within the confines of set standards. 
-%
-%
-
-%
-% Theory: 
-%
-
-%\paragraph*{Distributed Revision Control//distributed collaboration}
-%
-%
-%% Definition:
-%
-%
-%
-%
-%% Examples:
-%
-%Revision control systems enable multiple people to contribute to the development of a single project, for example a computer program, by managing any changes made. They generally offer such features as history tracking and the ability for different people to work without interrupting the work of others. A new type of revision control system has emerged, called distributed revision control, which is based on peer-to-peer concepts~\cite{O'Sullivan2009}. Distributed revision control systems, such as Git~\cite{git}, offer the same key features of a traditional revision control system, with the key difference being that each contributing party maintains a complete copy of the project~\cite{O'Sullivan2009}; meaning that there is no need for a central server. 
-%
-%% Why Appropriate:
-%
-%
-%
-%%
-%% Theory:
-%%
-%
-%\paragraph*{Distributed Decision Making}
-%
-%% Definition:
-%
-%? - definition from theory
-%
-%% Examples:
-%
-%%Social media is becoming an increasingly popular trend, especially on the internet as evidenced by the popularity of such sites as Reddit and Kickstarter. Reddit functions on the concepts of user voting on content in order to determine what is the most important~\cite{RedditInc.}. Kickstarter functions in a somewhat similar manner, though here the voting is done with money. In particular, Kickstarter revolves around users submitting projects which are then funded by individuals contributing whatever they want~\cite{KickstarterInc.}.
-%%
-%%% Why Appropriate:
-%
-%
-%
-% 
-%%Theory:
-%\paragraph*{Co-Design}
-%
-%%Definition:
-%"collective creativity as it is applied across the whole span of a design process" ~\cite{sanders2008co}
-%
-%%Example: 
-%
-%Smart Cities is a collaborative project between a number of governments and universities seeking to achieve excellence in the field of e-services~\cite{Cities}. One of their publications explored the concept of co-design and how it contributes to the delivery of e-services.  The general idea of co-design, according to Smart Cities, is take into account the perspectives of all stakeholders (including end-users). 
-%
-%%Why Appropriate: 
-%
-%The Zachman Framework, on the other hand, has a limited number of perspectives; none of which are end-users. Integrating the concept of co-design into the Zachman Framework in order to expand on its perspectives might allow it to better support decentralization.
