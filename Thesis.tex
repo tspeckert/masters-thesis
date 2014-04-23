@@ -148,7 +148,7 @@ pdfpagelabels]{hyperref} % Use this package to obtain links in the
 \input{sections/BiblioInfo.tex} % This file should be edited by the author.
 
 \begin{document}
-    
+    \renewcommand{\thepage}{\roman{page}}
     \frontmatterDSV % Sets the frontmatter (Title page(s), abstract, keywords, etc.)
     
     \tableofcontents
@@ -162,8 +162,11 @@ pdfpagelabels]{hyperref} % Use this package to obtain links in the
     \chapter{Introduction}
     \label{chap:introduction}
     
+    \renewcommand{\thepage}{\arabic{page}}    
+    \setcounter{page}{1}
+    
     \section{Background}
-    \label{sec:background}
+    \label{sec:background}    
     \input{sections/Part1_Background.tex}
 
     \section{Problem}
